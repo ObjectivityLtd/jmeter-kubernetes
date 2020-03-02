@@ -5,26 +5,27 @@
 name: $(BuildID)
 
 schedules:
-#every 5 minutes
-- cron: "0 */12 * * *"
-  displayName: Daily midnight build
-  branches:
-    include:
-    - master
-  always: true
+  #every 5 minutes
+  - cron: "0 */12 * * *"
+    displayName: Daily midnight build
+    branches:
+      include:
+        - master
+    always: true
 
 #config
 variables:
-  cluster_name: jubernetes
-  cluster_resource_group: jmeter-group
-  cluster_namespace: jubernetes2
-  kubernetesServiceConnection: pupa2
-  scale_down_replicas: 0
-  scale_up_replicas: 2
-  scale_up_replicas_master: 1
-  service: jmeter-slaves
-  service-master: jmeter-master
-  report_dir: reports
+  #please define all of them in azure portal
+  #cluster_name: jubernetes
+  #cluster_resource_group: jmeter-group
+  #cluster_namespace: jubernetes2
+  #kubernetesServiceConnection: pupa2
+  #scale_down_replicas: 0
+  #scale_up_replicas: 2
+  #scale_up_replicas_master: 1
+  #service: jmeter-slaves
+  #service-master: jmeter-master
+  #report_dir: reports
 
 jobs:
   - job: JMeter_Tests
@@ -33,61 +34,61 @@ jobs:
       vmImage: 'ubuntu-latest'
     timeoutInMinutes: 5
     steps:
-    - task: KubernetesManifest@0
-      displayName: Scale slaves to $(scale_down_replicas)
-      inputs:
-        kubernetesServiceConnection: $(kubernetesServiceConnection)
-        action: scale
-        kind: deployment
-        name: $(service)
-        replicas: $(scale_down_replicas)
-        namespace: $(cluster_namespace)
+      - task: KubernetesManifest@0
+        displayName: Scale slaves to $(scale_down_replicas)
+        inputs:
+          kubernetesServiceConnection: $(kubernetesServiceConnection)
+          action: scale
+          kind: deployment
+          name: $(service)
+          replicas: $(scale_down_replicas)
+          namespace: $(cluster_namespace)
 
-    - task: KubernetesManifest@0
-      displayName: Scale master to $(scale_down_replicas)
-      inputs:
-        kubernetesServiceConnection: $(kubernetesServiceConnection)
-        action: scale
-        kind: deployment
-        name: $(service-master)
-        replicas: $(scale_down_replicas)
-        namespace: $(cluster_namespace)
+      - task: KubernetesManifest@0
+        displayName: Scale master to $(scale_down_replicas)
+        inputs:
+          kubernetesServiceConnection: $(kubernetesServiceConnection)
+          action: scale
+          kind: deployment
+          name: $(service-master)
+          replicas: $(scale_down_replicas)
+          namespace: $(cluster_namespace)
 
-    - task: KubernetesManifest@0
-      displayName: Scale master to $(scale_up_replicas_master)
-      inputs:
-        kubernetesServiceConnection: $(kubernetesServiceConnection)
-        action: scale
-        kind: deployment
-        name: $(service-master)
-        replicas: $(scale_up_replicas_master)
-        namespace: $(cluster_namespace)
+      - task: KubernetesManifest@0
+        displayName: Scale master to $(scale_up_replicas_master)
+        inputs:
+          kubernetesServiceConnection: $(kubernetesServiceConnection)
+          action: scale
+          kind: deployment
+          name: $(service-master)
+          replicas: $(scale_up_replicas_master)
+          namespace: $(cluster_namespace)
 
-    - task: KubernetesManifest@0
-      displayName: Scale slaves to $(scale_up_replicas)
-      inputs:
-        kubernetesServiceConnection: $(kubernetesServiceConnection)
-        action: scale
-        kind: deployment
-        name: $(service)
-        replicas: $(scale_up_replicas)
-        namespace: $(cluster_namespace)
+      - task: KubernetesManifest@0
+        displayName: Scale slaves to $(scale_up_replicas)
+        inputs:
+          kubernetesServiceConnection: $(kubernetesServiceConnection)
+          action: scale
+          kind: deployment
+          name: $(service)
+          replicas: $(scale_up_replicas)
+          namespace: $(cluster_namespace)
 
-    - task: Kubernetes@1
-      displayName: Login to cluster $(cluster_name)
-      inputs:
-        command: login
-        connectionType: Kubernetes Service Connection
-        kubernetesServiceEndpoint: $(kubernetesServiceConnection)
+      - task: Kubernetes@1
+        displayName: Login to cluster $(cluster_name)
+        inputs:
+          command: login
+          connectionType: Kubernetes Service Connection
+          kubernetesServiceEndpoint: $(kubernetesServiceConnection)
 
-    - task: ShellScript@2
-      displayName: JMeter tests
-      inputs:
-        scriptPath: start_test_from_script.sh
-        args: $(threads) $(report_dir) "-l /results.csv -e"
+      - task: ShellScript@2
+        displayName: JMeter tests
+        inputs:
+          scriptPath: start_test_from_script.sh
+          args: $(threads) $(report_dir) "-l /results.csv -e"
 
-    - task: PublishPipelineArtifact@1
-      displayName: Archive JMeter Report
-      inputs:
-        path: $(report_dir)
-        artifact: JmeterReport
+      - task: PublishPipelineArtifact@1
+        displayName: Archive JMeter Report
+        inputs:
+          path: $(report_dir)
+          artifact: JmeterReport
