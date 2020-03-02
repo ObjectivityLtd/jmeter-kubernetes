@@ -1,0 +1,5468 @@
+{
+  u
+  'count': 19,
+  u
+  'value': [
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/26/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 26,
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        '7e9c9113-2e85-4023-a0a9-aa101dbff2f4'
+      },
+      u
+      'keepForever': True,
+      u
+      'sourceVersion': u
+      '03f23211ca153aaffbc52b6e838a2a1de3d31793',
+      u
+      'queueTime': u
+      '2020-02-18T19:37:09.4769249Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=26'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/26'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/26/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/26/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          '7e9c9113-2e85-4023-a0a9-aa101dbff2f4'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumber': u
+      '26',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T19:37:20.452356Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T19:39:13.6714098Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/26',
+      u
+      'uri': u
+      'vstfs:///Build/Build/26',
+      u
+      'lastChangedDate': u
+      '2020-02-18T19:39:13.89Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master',
+      u
+      'priority': u
+      'normal'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/23/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 23,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        '49043b8e-97b7-4e11-9850-b8eebee406d8'
+      },
+      u
+      'keepForever': True,
+      u
+      'sourceVersion': u
+      '5342fb0a3629cd5a673782e54e1a626b61ccfe8a',
+      u
+      'queueTime': u
+      '2020-02-18T19:23:16.4776905Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=23'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/23'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/23/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/23/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          '49043b8e-97b7-4e11-9850-b8eebee406d8'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 22,
+      u
+      'buildNumber': u
+      '20200218.22',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T19:23:51.8296061Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T19:25:30.0519067Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/23',
+      u
+      'uri': u
+      'vstfs:///Build/Build/23',
+      u
+      'lastChangedDate': u
+      '2020-02-18T19:25:30.253Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/21/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 21,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        '40a59ea1-8a2d-4eb3-bc61-0844522efc67'
+      },
+      u
+      'keepForever': True,
+      u
+      'sourceVersion': u
+      'f8def5d8520e71c31bb4e28bd367a540a178d2b7',
+      u
+      'queueTime': u
+      '2020-02-18T19:19:36.5553936Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=21'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/21'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/21/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/21/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          '40a59ea1-8a2d-4eb3-bc61-0844522efc67'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 20,
+      u
+      'buildNumber': u
+      '20200218.20',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T19:19:47.2250372Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T19:21:20.0450386Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/21',
+      u
+      'uri': u
+      'vstfs:///Build/Build/21',
+      u
+      'lastChangedDate': u
+      '2020-02-18T19:21:20.377Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/20/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 20,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        'e63bb787-cbe3-4e84-af42-94f37b9e7bef'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      '57b0c6c5bd90ea0233b6b3e49e2901c1e065ffad',
+      u
+      'queueTime': u
+      '2020-02-18T19:17:31.5710165Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=20'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/20'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/20/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/20/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          'e63bb787-cbe3-4e84-af42-94f37b9e7bef'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 19,
+      u
+      'buildNumber': u
+      '20200218.19',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T19:17:44.3489808Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T19:19:25.6762394Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/20',
+      u
+      'uri': u
+      'vstfs:///Build/Build/20',
+      u
+      'lastChangedDate': u
+      '2020-02-18T19:19:25.847Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/19/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 19,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        'f997d3c4-2279-4d0c-95ab-626b41aadcb2'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      'f1542a57087bdb649f202d389ca068873e2f214f',
+      u
+      'queueTime': u
+      '2020-02-18T15:11:16.2975885Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=19'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/19'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/19/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/19/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          'f997d3c4-2279-4d0c-95ab-626b41aadcb2'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 18,
+      u
+      'buildNumber': u
+      '20200218.18',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T15:11:35.1176423Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T15:13:05.582695Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/19',
+      u
+      'uri': u
+      'vstfs:///Build/Build/19',
+      u
+      'lastChangedDate': u
+      '2020-02-18T15:13:05.817Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/18/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 18,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        'a6910d2a-b1b5-4a7e-b9fa-60db536f9d3e'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      'a9a9a5b67800c21fd4fee16a9d10a5c400a1c3a1',
+      u
+      'queueTime': u
+      '2020-02-18T14:55:54.5399821Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=18'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/18'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/18/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/18/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          'a6910d2a-b1b5-4a7e-b9fa-60db536f9d3e'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 17,
+      u
+      'buildNumber': u
+      '20200218.17',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T14:56:15.3869079Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T14:57:51.4607706Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/18',
+      u
+      'uri': u
+      'vstfs:///Build/Build/18',
+      u
+      'lastChangedDate': u
+      '2020-02-18T14:57:51.757Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/17/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 17,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        '0ce8fb6b-e89a-4812-8cbd-4152324d230e'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      'f8880381038beb5efefa1251b2fe44e3e169dc10',
+      u
+      'queueTime': u
+      '2020-02-18T14:46:44.4860707Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=17'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/17'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/17/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/17/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          '0ce8fb6b-e89a-4812-8cbd-4152324d230e'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 16,
+      u
+      'buildNumber': u
+      '20200218.16',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T14:46:57.4413729Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T14:48:07.441854Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/17',
+      u
+      'uri': u
+      'vstfs:///Build/Build/17',
+      u
+      'lastChangedDate': u
+      '2020-02-18T14:48:07.647Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/16/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 16,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        'eac89704-f0b6-4852-bba9-a5cce4516c8e'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      'fbb4a4220b017363748582b5b6a749cd3a60189e',
+      u
+      'queueTime': u
+      '2020-02-18T14:46:04.405792Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=16'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/16'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/16/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/16/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          'eac89704-f0b6-4852-bba9-a5cce4516c8e'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 15,
+      u
+      'buildNumber': u
+      '20200218.15',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T14:46:19.0765804Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T14:47:32.1215023Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/16',
+      u
+      'uri': u
+      'vstfs:///Build/Build/16',
+      u
+      'lastChangedDate': u
+      '2020-02-18T14:47:32.337Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/15/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 15,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        '5507004e-9876-418d-afb2-d40a66676bae'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      '4c9fa7a0600c30dfa57d61daa47a7221780a5065',
+      u
+      'queueTime': u
+      '2020-02-18T14:33:21.3848115Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=15'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/15'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/15/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/15/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          '5507004e-9876-418d-afb2-d40a66676bae'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 14,
+      u
+      'buildNumber': u
+      '20200218.14',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T14:33:35.3319993Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T14:35:00.4302195Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/15',
+      u
+      'uri': u
+      'vstfs:///Build/Build/15',
+      u
+      'lastChangedDate': u
+      '2020-02-18T14:35:03.233Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/14/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 14,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        'cb5fe6e2-b1b6-4fc8-8c65-85ff7293af3d'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      'a9d7ce03bf5e5f342379883172fbf60a9cccc3e0',
+      u
+      'queueTime': u
+      '2020-02-18T14:29:43.1779488Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=14'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/14'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/14/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/14/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          'cb5fe6e2-b1b6-4fc8-8c65-85ff7293af3d'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 13,
+      u
+      'buildNumber': u
+      '20200218.13',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T14:29:58.6137395Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T14:31:30.4362694Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/14',
+      u
+      'uri': u
+      'vstfs:///Build/Build/14',
+      u
+      'lastChangedDate': u
+      '2020-02-18T14:31:32.973Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/11/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 11,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        '5b91551b-7958-4a04-ae58-a35e9b9041b8'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      'e102beebe757b4b8f1b841fefa480fb69f49a9e7',
+      u
+      'queueTime': u
+      '2020-02-18T13:18:47.0546592Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=11'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/11'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/11/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/11/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          '5b91551b-7958-4a04-ae58-a35e9b9041b8'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 11,
+      u
+      'buildNumber': u
+      '20200218.11',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T13:18:59.0949327Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T13:20:27.5792577Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/11',
+      u
+      'uri': u
+      'vstfs:///Build/Build/11',
+      u
+      'lastChangedDate': u
+      '2020-02-18T13:20:27.81Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/10/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 10,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        '846601e7-4110-4920-8232-17f97cc825ad'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      'add32130e2fca4a22d3e6f4b518eeee316913018',
+      u
+      'queueTime': u
+      '2020-02-18T13:18:06.8643718Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=10'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/10'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/10/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/10/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          '846601e7-4110-4920-8232-17f97cc825ad'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 10,
+      u
+      'buildNumber': u
+      '20200218.10',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T13:18:19.7099401Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T13:19:41.8791475Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/10',
+      u
+      'uri': u
+      'vstfs:///Build/Build/10',
+      u
+      'lastChangedDate': u
+      '2020-02-18T13:19:42.103Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/9/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 9,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        'c04dc4f8-fb82-495c-afc8-26e7714ee7ac'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      '549608816d378ffa0e84bf6794d6d680a51b5980',
+      u
+      'queueTime': u
+      '2020-02-18T13:13:02.7121719Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=9'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/9'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/9/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/9/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          'c04dc4f8-fb82-495c-afc8-26e7714ee7ac'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 9,
+      u
+      'buildNumber': u
+      '20200218.9',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T13:13:14.340827Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T13:14:26.8944886Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/9',
+      u
+      'uri': u
+      'vstfs:///Build/Build/9',
+      u
+      'lastChangedDate': u
+      '2020-02-18T13:14:27.16Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/7/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 7,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        '05738d4d-0eaf-4f52-a1ed-9f9c9a570aec'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      '48bb27a8855a7683f0b5731a2b121a5653a84ad1',
+      u
+      'queueTime': u
+      '2020-02-18T13:04:57.9628679Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=7'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/7'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/7/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/7/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          '05738d4d-0eaf-4f52-a1ed-9f9c9a570aec'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 7,
+      u
+      'buildNumber': u
+      '20200218.7',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T13:05:13.3630072Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T13:06:29.0930349Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/7',
+      u
+      'uri': u
+      'vstfs:///Build/Build/7',
+      u
+      'lastChangedDate': u
+      '2020-02-18T13:06:29.377Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/6/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 6,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        '1002f128-9ce1-44e2-adb4-e79eaa92b497'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      'dc350378c38f7923a79d712fbca219d5b2ce3582',
+      u
+      'queueTime': u
+      '2020-02-18T13:01:10.476223Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=6'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/6'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/6/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/6/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          '1002f128-9ce1-44e2-adb4-e79eaa92b497'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 6,
+      u
+      'buildNumber': u
+      '20200218.6',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T13:01:20.5529622Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T13:02:29.0166539Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/6',
+      u
+      'uri': u
+      'vstfs:///Build/Build/6',
+      u
+      'lastChangedDate': u
+      '2020-02-18T13:02:29.253Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/5/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 5,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        '3546a6b4-2d39-46d7-9196-e06e46d9628c'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      '479009799c1a7ef51347e315dafd2942189daab6',
+      u
+      'queueTime': u
+      '2020-02-18T12:58:16.9382076Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=5'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/5'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/5/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/5/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          '3546a6b4-2d39-46d7-9196-e06e46d9628c'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 5,
+      u
+      'buildNumber': u
+      '20200218.5',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T12:58:27.6231553Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T12:59:40.5524756Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/5',
+      u
+      'uri': u
+      'vstfs:///Build/Build/5',
+      u
+      'lastChangedDate': u
+      '2020-02-18T12:59:40.82Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/3/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 3,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        '25ea1ae8-d572-4c40-804f-3cacd547ad33'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      '1acefb0bae11de7f6825496a67fa0928f22e781c',
+      u
+      'queueTime': u
+      '2020-02-18T12:52:08.5219078Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=3'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/3'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/3/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/3/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          '25ea1ae8-d572-4c40-804f-3cacd547ad33'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 3,
+      u
+      'buildNumber': u
+      '20200218.3',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T12:52:19.4778528Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T12:52:45.5333497Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/3',
+      u
+      'uri': u
+      'vstfs:///Build/Build/3',
+      u
+      'lastChangedDate': u
+      '2020-02-18T12:52:45.713Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/2/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 2,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        '84bd3a7f-40fd-45f3-a24a-ffb96c9fffad'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      '39d1c52dabaa3f3e6851ac4a83e550b71a67693c',
+      u
+      'queueTime': u
+      '2020-02-18T12:50:29.9598076Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=2'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/2'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/2/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/2/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'GitHub',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/2f51d8a4-432c-4acd-9bb3-eb3564c72c27',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/svc.MzU5NGI4NWQtNTEyNC00ZWVkLWE5YjItZWUzYWM4MzBmMzhjOkdpdEh1YiBBcHA6YTQxMDdhNjMtNzdlZi00N2ZhLTk1NDYtOWUyOGQwMTkzMGNi'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '2f51d8a4-432c-4acd-9bb3-eb3564c72c27'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          '84bd3a7f-40fd-45f3-a24a-ffb96c9fffad'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 2,
+      u
+      'buildNumber': u
+      '20200218.2',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T12:50:46.4522674Z',
+      u
+      'triggerInfo': {},
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T12:51:17.7688219Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/2',
+      u
+      'uri': u
+      'vstfs:///Build/Build/2',
+      u
+      'lastChangedDate': u
+      '2020-02-18T12:51:18.033Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    },
+    {
+      u
+      'logs': {
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/1/logs',
+        u
+        'type': u
+        'Container',
+        u
+        'id': 0
+      },
+      u
+      'result': u
+      'succeeded',
+      u
+      'retainedByRelease': False,
+      u
+      'id': 1,
+      u
+      'priority': u
+      'normal',
+      u
+      'orchestrationPlan': {
+        u
+        'planId': u
+        'd181eb03-fa15-43c5-a324-e9c092bddc9f'
+      },
+      u
+      'keepForever': False,
+      u
+      'sourceVersion': u
+      'f37d2d441682742d666cd0ffe60e0d299dc1ea08',
+      u
+      'queueTime': u
+      '2020-02-18T12:45:32.8855479Z',
+      u
+      '_links': {
+        u
+        'web': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_build/results?buildId=1'
+        },
+        u
+        'self': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/1'
+        },
+        u
+        'badge': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/status/1'
+        },
+        u
+        'sourceVersionDisplayUri': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/1/sources'
+        },
+        u
+        'timeline': {
+          u
+          'href': u
+          'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/builds/1/Timeline'
+        }
+      },
+      u
+      'requestedBy': {
+        u
+        'displayName': u
+        'Gabriel Starczewski',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/1deff8d7-10ba-687b-87ac-0445865026d6',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'aad.MWRlZmY4ZDctMTBiYS03ODdiLTg3YWMtMDQ0NTg2NTAyNmQ2',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/aad.MWRlZmY4ZDctMTBiYS03ODdiLTg3YWMtMDQ0NTg2NTAyNmQ2'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '1deff8d7-10ba-687b-87ac-0445865026d6'
+      },
+      u
+      'requestedFor': {
+        u
+        'displayName': u
+        'Gabriel Starczewski',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/1deff8d7-10ba-687b-87ac-0445865026d6',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        'aad.MWRlZmY4ZDctMTBiYS03ODdiLTg3YWMtMDQ0NTg2NTAyNmQ2',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/aad.MWRlZmY4ZDctMTBiYS03ODdiLTg3YWMtMDQ0NTg2NTAyNmQ2'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '1deff8d7-10ba-687b-87ac-0445865026d6'
+      },
+      u
+      'status': u
+      'completed',
+      u
+      'plans': [
+        {
+          u
+          'planId': u
+          'd181eb03-fa15-43c5-a324-e9c092bddc9f'
+        }
+      ],
+      u
+      'repository': {
+        u
+        'checkoutSubmodules': False,
+        u
+        'type': u
+        'GitHub',
+        u
+        'id': u
+        'gabrielstar/azure-pipelines-java',
+        u
+        'clean': None
+      },
+      u
+      'tags': [],
+      u
+      'buildNumberRevision': 1,
+      u
+      'buildNumber': u
+      '20200218.1',
+      u
+      'reason': u
+      'individualCI',
+      u
+      'startTime': u
+      '2020-02-18T12:46:30.7646605Z',
+      u
+      'triggerInfo': {
+        u
+        'ci.sourceSha': u
+        'f37d2d441682742d666cd0ffe60e0d299dc1ea08',
+        u
+        'ci.sourceBranch': u
+        'master',
+        u
+        'ci.message': u
+        'Set up CI with Azure Pipelines'
+      },
+      u
+      'properties': {},
+      u
+      'finishTime': u
+      '2020-02-18T12:47:11.2172979Z',
+      u
+      'definition': {
+        u
+        'name': u
+        'gabrielstar.azure-pipelines-java',
+        u
+        'drafts': [],
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Definitions/1?revision=1',
+        u
+        'uri': u
+        'vstfs:///Build/Definition/1',
+        u
+        'project': {
+          u
+          'name': u
+          'jmeter',
+          u
+          'lastUpdateTime': u
+          '2020-02-18T12:25:34.873Z',
+          u
+          'url': u
+          'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'visibility': u
+          'public',
+          u
+          'state': u
+          'wellFormed',
+          u
+          'id': u
+          'a4107a63-77ef-47fa-9546-9e28d01930cb',
+          u
+          'revision': 12
+        },
+        u
+        'queueStatus': u
+        'enabled',
+        u
+        'path': u
+        '\\',
+        u
+        'type': u
+        'build',
+        u
+        'id': 1,
+        u
+        'revision': 1
+      },
+      u
+      'lastChangedBy': {
+        u
+        'displayName': u
+        'Microsoft.VisualStudio.Services.TFS',
+        u
+        'url': u
+        'https://spsprodweu3.vssps.visualstudio.com/A3594b85d-5124-4eed-a9b2-ee3ac830f38c/_apis/Identities/00000002-0000-8888-8000-000000000000',
+        u
+        'imageUrl': None,
+        u
+        'descriptor': u
+        's2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA',
+        u
+        '_links': {
+          u
+          'avatar': {
+            u
+            'href': u
+            'https://dev.azure.com/gstarczewski/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA'
+          }
+        },
+        u
+        'uniqueName': None,
+        u
+        'id': u
+        '00000002-0000-8888-8000-000000000000'
+      },
+      u
+      'url': u
+      'https://dev.azure.com/gstarczewski/a4107a63-77ef-47fa-9546-9e28d01930cb/_apis/build/Builds/1',
+      u
+      'uri': u
+      'vstfs:///Build/Build/1',
+      u
+      'lastChangedDate': u
+      '2020-02-18T12:47:11.44Z',
+      u
+      'project': {
+        u
+        'name': u
+        'jmeter',
+        u
+        'lastUpdateTime': u
+        '2020-02-18T12:25:34.873Z',
+        u
+        'url': u
+        'https://dev.azure.com/gstarczewski/_apis/projects/a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'visibility': u
+        'public',
+        u
+        'state': u
+        'wellFormed',
+        u
+        'id': u
+        'a4107a63-77ef-47fa-9546-9e28d01930cb',
+        u
+        'revision': 12
+      },
+      u
+      'triggeredByBuild': None,
+      u
+      'validationResults': [],
+      u
+      'sourceBranch': u
+      'refs/heads/master'
+    }
+  ]
+}

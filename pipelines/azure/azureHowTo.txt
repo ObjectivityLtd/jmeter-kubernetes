@@ -1,0 +1,33 @@
+You need to perform a few simple steps to have your jmeter distributed tests up and running on Azure:
+
+1. Create a kubernetes cluster in azure with selected number of nodes e.g. 3
+
+   Note:
+    - cluster_name,
+    - cluster_resource_group,
+    - cluster_namespace
+
+   We will need it further on.
+
+2. Choose the right pipeline
+
+ There are the following pipelines in pipelines/azure folder
+
+    azure-pipelines.0.standalone.build_agent.yaml
+
+    azure-pipelines.1.distributed.global_credentials.yaml:
+
+        A simple stand-alone pipeline that runs tests from a build agent. This requires a token for each run.
+        You need to edit the pipeline variables section. Usefulness of this pipelines is limited to testing or when you
+        fully manage the build agent. Otherwise
+
+    azure-pipelines.2.distributed.yaml
+
+        This is an azure pipeline that ut
+
+    azure-pipelines.3.distributed.variable_based.yaml
+
+3. Configure pipeline in Azure DevOps
+
+
+4. Run pipeline
