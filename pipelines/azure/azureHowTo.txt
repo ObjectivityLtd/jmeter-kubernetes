@@ -1,8 +1,14 @@
 You need to perform a few simple steps to have your jmeter distributed tests up and running on Azure:
 
 1. Create a kubernetes cluster in azure with selected number of nodes e.g. 3
+    Go to https://portal.azure.com/#home
+    Create resource group
+    Create a resource: Kubernetes Service
+    Select name and resource group
+    Select 3 nodes (location closest to your AUT)
+    Keep clickin next
+    When provisioning is done note:
 
-   Note:
     - cluster_name,
     - cluster_resource_group,
     - cluster_namespace
@@ -46,8 +52,11 @@ You need to perform a few simple steps to have your jmeter distributed tests up 
     If you chose (3) click Save instead of Run. The click Edit->Variables and add all required variables e.g.
 
 
-
-
 4. Run
 
     Click Run if you did not.
+
+
+#Useful kubernetes commands from Cloud Shell:
+
+
