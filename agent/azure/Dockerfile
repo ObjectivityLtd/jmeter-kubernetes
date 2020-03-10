@@ -48,7 +48,7 @@ ENV PATH=${M2_HOME}/bin:${PATH}
 
 WORKDIR /azp
 
-COPY ./start.sh .
+COPY start.sh .
 RUN chmod +x start.sh
 
 CMD ["./start.sh"]
