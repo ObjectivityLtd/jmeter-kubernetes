@@ -37,11 +37,9 @@ RUN apt-get update && \
 
 # Setup JAVA_HOME, this is useful for docker commandline
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
+ENV JAVA_HOME_8_X64 /usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
-
-
-# Define commonly used JAVA_HOME variable
-ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+RUN export JAVA_HOME_8_X64
 
 WORKDIR /azp
 
