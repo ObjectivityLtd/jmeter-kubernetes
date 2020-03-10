@@ -15,7 +15,7 @@ jobs:
       - task: Maven@3
         displayName: Run JMeter Tests
         inputs:
-          mavenPomFile: 'pom.xml'
+          mavenPomFile: 'jmeter/as_maven/pom.xml'
           mavenOptions: '-Xmx3072m'
           javaHomeOption: 'JDKVersion'
           jdkVersionOption: '1.8'
