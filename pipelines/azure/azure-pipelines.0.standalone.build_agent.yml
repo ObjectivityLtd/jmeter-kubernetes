@@ -11,7 +11,12 @@ jobs:
     pool: private
 
     timeoutInMinutes: 5
+
     steps:
+      - task: JavaToolInstaller@0
+        inputs:
+          versionSpec: '8'
+
       - task: Maven@3
         displayName: Run JMeter Tests
         inputs:
