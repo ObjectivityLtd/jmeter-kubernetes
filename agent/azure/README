@@ -4,7 +4,7 @@ is extended with installation of jdk and maven 3.6.3 so that jmeter tests can be
 You need to attach your private agent to your devops organization agent pool to use it
 
 1. Create a new agent pool e..g private
-2.  Build this image
+2.  Build this image locally
     docker build -t dockeragent:latest .
 3. Run it , provide PAT when running
     docker run -e AZP_URL=https://dev.azure.com/gstarczewski -e AZP_TOKEN= -e AZP_POOL=private -e AZP_AGENT_NAME=docker_gab dockeragent:latest
@@ -15,6 +15,6 @@ You need to attach your private agent to your devops organization agent pool to 
 
 
 Note: pre-built image is available in here: https://hub.docker.com/repository/docker/gabrielstar/jmeter
-so you can start the agent using:
+so you can start the agent using this image too:
 
 docker run -e AZP_URL=https://dev.azure.com/gstarczewski -e AZP_TOKEN= -e AZP_POOL=private -e AZP_AGENT_NAME=docker_gab gabrielstar/jmeter:latest
