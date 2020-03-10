@@ -8,8 +8,7 @@ trigger:
   - master
 jobs:
   - job: Run_Jmeter_Tests
-    pool:
-      vmImage: 'ubuntu-latest'
+    pool: private
 
     timeoutInMinutes: 5
     steps:
