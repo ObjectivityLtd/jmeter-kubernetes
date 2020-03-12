@@ -3,6 +3,10 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 #https://dev.azure.com/gstarczewski/jmeter/_apis/build/builds?api-version=5.1
+
+# This pipeline requires that after one time set up of build agent correct kubernetes credentials are copied over to agent
+#so that cluster can be accessed with kubectl remotely
+
 name: $(BuildID)
 trigger:
   - master
@@ -19,7 +23,7 @@ jobs:
       - task: ShellScript@2
         inputs:
           scriptPath: start_test_from_script_params.sh
-          args: $(cluster_namespace) $(scenario) "-l /results.csv -e"
+          args: $(cluster_namespace) $(scenario)
         displayName: 'Run dummy test'
 
       - task: CmdLine@2
