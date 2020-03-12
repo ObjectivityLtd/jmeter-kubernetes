@@ -40,6 +40,18 @@ jobs:
         displayName: 'Scale up slaves to $(scale_up_replicas_slaves)'
 
       - task: ShellScript@2
+        displayName: Wait until service jmeter-master rescales
+        inputs:
+          scriptPath: wait_for_service_to_scale.sh
+          args: $(cluster_namespace) jmeter-master 1 5
+
+      - task: ShellScript@2
+        displayName: Wait until service jmeter-slaves rescales
+        inputs:
+          scriptPath: wait_for_service_to_scale.sh
+          args: $(cluster_namespace) jmeter-slaves 1 5
+
+      - task: ShellScript@2
         inputs:
           scriptPath: start_test_from_script_params.sh
           args: $(cluster_namespace) $(scenario)
