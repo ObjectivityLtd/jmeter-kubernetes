@@ -17,10 +17,10 @@ jobs:
     steps:
 
       - task: ShellScript@2
-          inputs:
-            scriptPath: start_test_from_script_params.sh
-          args: $(cluster_namespace) $(scenario)
-          displayName: 'Run dummy test'
+        inputs:
+          scriptPath: start_test_from_script_params.sh
+        args: $(cluster_namespace) $(scenario)
+        displayName: 'Run dummy test'
 
       - task: CmdLine@2
         displayName: List JMeter ReportDir
