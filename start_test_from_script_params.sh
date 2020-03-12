@@ -23,7 +23,7 @@ kubectl cp "$jmx" -n $tenant "$master_pod:/$test_name"
 
 threads=1
 report_dir=report
-jmeter_args=
+jmeter_args=$3
 
 echo "Threads $threads"
 echo "Report dir $report_dir"

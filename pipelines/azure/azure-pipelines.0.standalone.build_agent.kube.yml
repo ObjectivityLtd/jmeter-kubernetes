@@ -19,7 +19,7 @@ jobs:
       - task: ShellScript@2
         inputs:
           scriptPath: start_test_from_script_params.sh
-          args: $(cluster_namespace) $(scenario)
+          args: $(cluster_namespace) $(scenario) "-l /results.csv -e"
         displayName: 'Run dummy test'
 
       - task: CmdLine@2
