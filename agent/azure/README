@@ -5,9 +5,9 @@ You need to attach your private agent to your devops organization agent pool to 
 
 1. Create a new agent pool e..g private
 2.  Build this image locally
-    docker build -t dockeragent:latest .
+    docker build -t gabrielstar/jmeter .
 3. Run it , provide PAT when running
-    docker run -e AZP_URL=https://dev.azure.com/gstarczewski -e AZP_TOKEN= -e AZP_POOL=private -e AZP_AGENT_NAME=docker_gab dockeragent:latest
+    docker run -e AZP_URL=https://dev.azure.com/gstarczewski -e AZP_TOKEN= -e AZP_POOL=private -e AZP_AGENT_NAME=docker_gab gabrielstar/jmeter:latest
 4. In pipeline specify
     jobs:
       - job: Run_Jmeter_Tests
