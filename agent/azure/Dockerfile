@@ -11,6 +11,8 @@ RUN apt-get update \
         curl \
         jq \
         git \
+        mc \
+        vim \
         iputils-ping \
         libcurl3 \
         libicu55 \
@@ -39,6 +41,13 @@ RUN apt-get update && \
 	update-ca-certificates -f && \
 	rm -rf /var/lib/apt/lists/* && \
 	rm -rf /var/cache/oracle-jdk8-installer;
+
+#Install kubectl
+
+RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl && \
+    chmod +x ./kubectl && \
+    mv ./kubectl /usr/local/bin/kubectl
+
 
 # Setup JAVA_HOME, this is useful for docker commandline
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
