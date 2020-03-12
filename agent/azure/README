@@ -18,3 +18,9 @@ Note: pre-built image is available in here: https://hub.docker.com/repository/do
 so you can start the agent using this image too:
 
 docker run -e AZP_URL=https://dev.azure.com/gstarczewski -e AZP_TOKEN= -e AZP_POOL=private -e AZP_AGENT_NAME=docker_gab gabrielstar/jmeter:1.0
+
+5. If you want agent to have access to kubernetes cluster you need to copy credentials over to agent
+
+     from kubernetes master:
+         docker cp .\.kube\  happy_booth:/root/
+     or use scp to copy over netowrk hosts
