@@ -12,7 +12,7 @@ jobs:
     variables:
       cluster_namespace: jmeter
       scenario: cloudssky.jmx
-    timeoutInMinutes: 5
+    timeoutInMinutes: 10
 
     steps:
 
