@@ -24,24 +24,20 @@ jobs:
 
     steps:
       - script: |
-          kubectl get pods -n $(cluster_namespace)
           kubectl scale deployment jmeter-master --replicas=$(scale_down_replicas) -n $(cluster_namespace)
-        displayName: 'Scale down master'
+        displayName: 'Scale down master to $(scale_down_replicas)'
 
       - script: |
-          kubectl get pods -n $(cluster_namespace)
           kubectl scale deployment jmeter-master --replicas=$(scale_up_replicas_master) -n $(cluster_namespace)
-        displayName: 'Scale up master'
+        displayName: 'Scale up master to $(scale_up_replicas_master)'
 
       - script: |
-          kubectl get pods -n $(cluster_namespace)
           kubectl scale deployment jmeter-slaves --replicas=$(scale_down_replicas) -n $(cluster_namespace)
-        displayName: 'Scale down slaves'
+        displayName: 'Scale down slaves to $(scale_down_replicas)'
 
       - script: |
-          kubectl get pods -n $(cluster_namespace)
-          kubectl scale deployment jmeter-slaves --replicas=$(scale_up_replicas_slave) -n $(cluster_namespace)
-        displayName: 'Scale up slaves'
+          kubectl scale deployment jmeter-slaves --replicas=$(scale_up_replicas_slaves) -n $(cluster_namespace)
+        displayName: 'Scale up slaves to $(scale_up_replicas_slaves)'
 
       - task: ShellScript@2
         inputs:
