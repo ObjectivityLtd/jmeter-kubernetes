@@ -16,9 +16,32 @@ jobs:
     variables:
       cluster_namespace: jmeter
       scenario: cloudssky.jmx
+      scale_down_replicas: 0
+      scale_up_replicas_slaves: 1
+      scale_up_replicas_master: 1
+
     timeoutInMinutes: 10
 
     steps:
+      - script: |
+          kubectl get pods -n $(cluster_namespace)
+          kubectl scale deployment jmeter-master --replicas=$(scale_down_replicas) -n $(cluster_namespace)
+          displayName: 'Scale down master'
+
+      - script: |
+          kubectl get pods -n $(cluster_namespace)
+          kubectl scale deployment jmeter-master --replicas=$(scale_up_replicas_master) -n $(cluster_namespace)
+          displayName: 'Scale up master'
+
+      - script: |
+          kubectl get pods -n $(cluster_namespace)
+          kubectl scale deployment jmeter-slaves --replicas=$(scale_down_replicas) -n $(cluster_namespace)
+          displayName: 'Scale down slaves'
+
+      - script: |
+          kubectl get pods -n $(cluster_namespace)
+          kubectl scale deployment jmeter-slaves --replicas=$(scale_up_replicas_slave) -n $(cluster_namespace)
+          displayName: 'Scale up slaves'
 
       - task: ShellScript@2
         inputs:
