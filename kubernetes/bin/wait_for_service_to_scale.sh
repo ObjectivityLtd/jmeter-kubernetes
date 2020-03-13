@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #wait until given service scales to desired quantity
 wait_for_service_to_scale() {
   cluster_namespace=$1
