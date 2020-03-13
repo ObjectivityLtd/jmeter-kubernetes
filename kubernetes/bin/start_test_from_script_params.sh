@@ -9,7 +9,7 @@ working_dir="`pwd`"
 tenant="$1"
 jmx="$2"
 scenario_dir=$working_dir/../../jmeter/as_jmx
-report_dir=$working_dir/../tmp/report_dir
+report_dir=$working_dir/../tmp/report
 
 
 test_name="$(basename "$scenario_dir/$jmx")"
