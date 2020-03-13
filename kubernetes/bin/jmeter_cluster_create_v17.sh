@@ -10,5 +10,11 @@ kubectl delete namespace $tenant ||:
 echo "Replacing API version in deployment files:  apiVersion: apps/v1beta2 - > apiVersion: apps/v1"
 sed -i 's+apps/v1beta2+apps/v1+g' ../config/deployments/*_deploy.yaml
 
+echo "Removing Grafana LoadBalancer for local set-up"
+sed -i 's+type: LoadBalancer++g' ../config/deployments/jmeter_grafana_svc.yaml
+
+
+type: LoadBalancer
+
 echo "Setting up cluster"
 source jmeter_cluster_create.sh
