@@ -56,15 +56,15 @@ jobs:
         inputs:
           scriptPath: $(kubernetes_script_path)/start_test_from_script_params.sh
           args: $(cluster_namespace) $(scenario)
-        displayName: 'Run dummy test'
+        displayName: Run test $(scenario)
 
       - task: CmdLine@2
         displayName: List JMeter ReportDir
         inputs:
-          script: 'ls -alh $(System.DefaultWorkingDirectory)/report'
+          script: 'ls -alh $(System.DefaultWorkingDirectory)/kubernetes/tmp/report'
 
       - task: PublishPipelineArtifact@1
         displayName: Archive JMeter Report
         inputs:
-          path: $(System.DefaultWorkingDirectory)/report
+          path: $(System.DefaultWorkingDirectory)/kubernetes/tmp/report
           artifact: JmeterReport

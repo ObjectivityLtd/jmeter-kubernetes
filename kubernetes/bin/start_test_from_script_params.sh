@@ -9,6 +9,7 @@ working_dir="`pwd`"
 tenant="$1"
 jmx="$2"
 scenario_dir=$working_dir/../../jmeter/as_jmx
+report_dir=$working_dir/../tmp/report_dir
 
 
 test_name="$(basename "$scenario_dir/$jmx")"
@@ -24,7 +25,6 @@ kubectl cp "$scenario_dir/$jmx" -n $tenant "$master_pod:/$test_name"
 
 threads=1
 tmp=/tmp
-report_dir=report
 jmeter_args=$3
 
 echo "Threads $threads"
