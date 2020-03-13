@@ -1,0 +1,8 @@
+These deployment files have been successfully tests on:
+
+- local kubernetes 1.15.5 (Windows host)
+- azure remote 1.14.8
+
+Fro out of the box install keep kubernetes version < 1.16. If hovewer you use higher version api changes might be required e.g.
+
+apiVersion: apps/v1beta2 - > apiVersion: apps/v1
