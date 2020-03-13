@@ -61,7 +61,7 @@ jobs:
       - task: CmdLine@2
         displayName: List JMeter ReportDir
         inputs:
-          script: 'ls -alh $(System.DefaultWorkingDirectory)/kubernetes/tmp/report'
+          script: 'ls -alh /'
 
       - task: PublishPipelineArtifact@1
         displayName: Archive JMeter Report
