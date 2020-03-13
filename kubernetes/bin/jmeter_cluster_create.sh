@@ -4,6 +4,7 @@
 #On azure master node is not accessible directly as per https://stackoverflow.com/questions/48143225/master-node-on-aks-cluster
 
 working_dir=$(pwd)/../config/deployments
+tmp_dir=$(pwd)/../tmp
 
 echo "checking if kubectl is present"
 
@@ -96,4 +97,4 @@ echo
 
 kubectl get -n $tenant all
 
-echo namespace = $tenant > $working_dir/../tmp/tenant_export
+echo namespace = $tenant > $tmp_dir/tenant_export
