@@ -14,7 +14,5 @@ echo "Removing Grafana LoadBalancer for local set-up. Keep it on when running on
 sed -i 's+type: LoadBalancer++g' ../config/deployments/jmeter_grafana_svc.yaml
 
 
-type: LoadBalancer
-
 echo "Setting up cluster"
 source jmeter_cluster_create.sh
