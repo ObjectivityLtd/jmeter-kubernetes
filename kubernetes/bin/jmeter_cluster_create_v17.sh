@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Kubernetes cluseter must posses enough resources to deploy all the pods
 
 working_dir="$(pwd)"
 tenant=$(awk '{print $NF}' "$working_dir/../tmp/tenant_export")
