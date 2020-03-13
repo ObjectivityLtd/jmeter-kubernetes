@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 #Kubernetes cluseter must posses enough resources to deploy all the pods
+#stuff does not get deployed on master so you need minimum of 1 master and 1 worker
 
 working_dir="$(pwd)"
 tenant=$(awk '{print $NF}' "$working_dir/../tmp/tenant_export")
