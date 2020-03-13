@@ -53,7 +53,7 @@ jobs:
 
       - task: ShellScript@2
         inputs:
-          scriptPath: start_test_from_script_params.sh
+          scriptPath: kubernetes/bin/start_test_from_script_params.sh
           args: $(cluster_namespace) $(scenario)
         displayName: 'Run dummy test'
 

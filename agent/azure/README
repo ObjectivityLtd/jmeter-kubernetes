@@ -1,10 +1,14 @@
 This image based on https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops
 is extended with installation of jdk and maven 3.6.3 so that jmeter tests can be run from maven plugin.
 
+Capabilities:
+    - maven steps
+    - kubectl steps
+
 You need to attach your private agent to your devops organization agent pool to use it
 
 1. Create a new agent pool e..g private
-2.  Build this image locally
+2. Build this image locally
     docker build -t gabrielstar/jmeter .
 3. Run it , provide PAT when running
     docker run -e AZP_URL=https://dev.azure.com/gstarczewski -e AZP_TOKEN= -e AZP_POOL=private -e AZP_AGENT_NAME=docker_gab gabrielstar/jmeter:latest
@@ -15,7 +19,7 @@ You need to attach your private agent to your devops organization agent pool to 
 
 
 Note: pre-built image is available in here: https://hub.docker.com/repository/docker/gabrielstar/jmeter
-so you can start the agent using this image too:
+so you can start the agent using this image too, which is the recommended approach:
 
 docker run -e AZP_URL=https://dev.azure.com/gstarczewski -e AZP_TOKEN= -e AZP_POOL=private -e AZP_AGENT_NAME=docker_gab gabrielstar/jmeter:1.0
 
@@ -24,3 +28,10 @@ docker run -e AZP_URL=https://dev.azure.com/gstarczewski -e AZP_TOKEN= -e AZP_PO
      from kubernetes master:
          docker cp .\.kube\  happy_booth:/root/
      or use scp to copy over netowrk hosts
+
+
+ Useful:
+
+ docker exec -it container_name /bin/bash
+ docker stop $(docker ps -a -q)
+ docker rm $(docker ps -a -q)

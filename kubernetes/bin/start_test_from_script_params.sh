@@ -8,16 +8,17 @@ working_dir="`pwd`"
 #Get namesapce variable
 tenant="$1"
 jmx="$2"
+scenario_dir=$working_dir/../../jmeter/as_jmx
 
 
-test_name="$(basename "$jmx")"
+test_name="$(basename "$scenario_dir/$jmx")"
 #delete evicted pods first
 kubectl get pods --all-namespaces --field-selector 'status.phase==Failed' -o json | kubectl delete -f -
 #Get Master pod details
 
 master_pod=`kubectl get po -n $tenant | grep Running | grep jmeter-master | awk '{print $1}'`
 
-kubectl cp "$jmx" -n $tenant "$master_pod:/$test_name"
+kubectl cp "$scenario_dir/$jmx" -n $tenant "$master_pod:/$test_name"
 
 ## Echo Starting Jmeter load test
 

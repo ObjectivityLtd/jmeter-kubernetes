@@ -1,1 +1,0 @@
-docker exec -it container_name /bin/bash
