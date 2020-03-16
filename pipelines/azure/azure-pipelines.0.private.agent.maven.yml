@@ -14,6 +14,7 @@ jobs:
       script_path: kubernetes/bin
       #jmeter
       report_dir:  $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
+      artifact_name: jmeter_report
       jmeter_scenario_pom: 'jmeter/as_maven/pom.xml'
       xmx: '2048'
       jmeter_scenario_name: 'cloudssky'
@@ -41,15 +42,10 @@ jobs:
         displayName: Archive Report for $(jmeter_scenario_name)
         inputs:
           path: $(report_dir)
-          artifact: JmeterReport
-
-      - script: |
-          id=$(date | sed "s/ /_/g" | sed "s/:/_/g") && zip -r report.zip $(report_dir)
-          curl -H "X-JFrog-Art-Api:AKCp5ekcNd5Mnv4LKsUTqqK8NSKwisBum8zRB37H5sMLLHW8KTc6EfN3e2cLmt99JyTWzA3Bh" -X PUT "$(base_url)/artifactory/$(repo)/$(project)/${id}/report.zip" -T report.zip
-        displayName: 'Upload to'
+          artifact: $(artifact_name)
 
       - task: ShellScript@2
         inputs:
           scriptPath: $(script_path)/upload_to_artifactory.sh
-          args: report.zip $(report_dir) $(base_url) $(repo) $(project)2 AKCp5ekcNd5Mnv4LKsUTqqK8NSKwisBum8zRB37H5sMLLHW8KTc6EfN3e2cLmt99JyTWzA3Bh
+          args: $(artifact_name).zip $(report_dir) $(base_url) $(repo) $(project) AKCp5ekcNd5Mnv4LKsUTqqK8NSKwisBum8zRB37H5sMLLHW8KTc6EfN3e2cLmt99JyTWzA3Bh
         displayName: Artifactory upload

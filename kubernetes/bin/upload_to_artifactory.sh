@@ -10,7 +10,7 @@ upload() {
   repo=$4
   project=$5
   access_token=$6
-  id=$(date | sed "s/ /_/g" | sed "s/:/_/g") && zip -r $artifact_name $report_dir
+  id=$(date | sed "s/ /_/g" | sed "s/:/_/g") && cd $report_dir && zip -r $artifact_name .
   curl -H "X-JFrog-Art-Api:$access_token" -X PUT "${base_url}/artifactory/${repo}/${project}/${id}/${artifact_name}" -T ${artifact_name}
 }
 
