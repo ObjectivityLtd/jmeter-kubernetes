@@ -8,6 +8,7 @@ spec:
   ports:
     - port: 80
       targetPort: 3000
+      nodePort: 30000
   selector:
     app: jmeter-grafana
   type: LoadBalancer
