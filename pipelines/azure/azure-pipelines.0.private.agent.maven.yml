@@ -6,33 +6,47 @@
 name: $(BuildID)
 trigger:
   - master
+
 jobs:
-  - job: Run_Jmeter_Tests
+  - job: jmeter_pipeline_maven
     pool: private
+    variables:
+      #jmeter
+      report_dir:  $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
+      artifact_name: jmeter_report
+      jmeter_scenario_pom: 'jmeter/as_maven/pom.xml'
+      xmx: '2048'
+      jmeter_scenario_name: 'cloudssky'
+
+      script_path: kubernetes/bin
+      #artifactory
+      base_url: http://10.1.137.108:8081
+      repo: jmeter-artifacts
+      project: cloudssky
+      tribe: testing
 
     timeoutInMinutes: 5
-
     steps:
 
       - task: Maven@3
-        displayName: Run JMeter Tests
+        displayName: Run $(jmeter_scenario_name) with maven
         inputs:
-          mavenPomFile: 'jmeter/as_maven/pom.xml'
-          mavenOptions: '-Xmx3072m'
+          mavenPomFile: $(jmeter_scenario_pom)
           javaHomeOption: 'JDKVersion'
           jdkVersionOption: '1.8'
           jdkArchitectureOption: 'x64'
           publishJUnitResults: true
           testResultsFiles: '**/surefire-reports/TEST-*.xml'
-          goals: 'verify'
-
-      - task: CmdLine@2
-        displayName: List JMeter ReportDir
-        inputs:
-          script: 'ls -alh $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports'
+          goals: 'clean verify -Dxmx=$(xmx)'
 
       - task: PublishPipelineArtifact@1
-        displayName: Archive JMeter Report
+        displayName: Archive Report for $(jmeter_scenario_name)
         inputs:
-          path: $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
-          artifact: JmeterReport
+          path: $(report_dir)
+          artifact: $(artifact_name)
+
+      - task: ShellScript@2
+        inputs:
+          scriptPath: $(script_path)/upload_to_artifactory.sh
+          args: $(artifact_name).zip $(report_dir) $(base_url) $(repo) $(tribe)/$(project) $(secret_artifactory_token)
+        displayName: Artifactory upload
