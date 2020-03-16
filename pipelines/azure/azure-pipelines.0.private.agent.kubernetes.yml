@@ -20,6 +20,11 @@ jobs:
       scale_up_replicas_slaves: 1
       scale_up_replicas_master: 1
       kubernetes_script_path: kubernetes/bin
+      report_dir: $(System.DefaultWorkingDirectory)/kubernetes/tmp/report
+      artifact_name: jmeter_report
+      base_url: http://10.1.137.108:8081
+      repo: jmeter-artifacts
+      project: cloudssky
 
     timeoutInMinutes: 10
 
@@ -61,10 +66,16 @@ jobs:
       - task: CmdLine@2
         displayName: List JMeter ReportDir
         inputs:
-          script: 'ls -alh $(System.DefaultWorkingDirectory)/kubernetes/tmp/report'
+          script: 'ls -alh $(report_dir)'
 
       - task: PublishPipelineArtifact@1
         displayName: Archive JMeter Report
         inputs:
-          path: $(System.DefaultWorkingDirectory)/kubernetes/tmp/report
-          artifact: JmeterReport
+          path: $(report_dir)
+          artifact: $(artifact_name)
+
+      - task: ShellScript@2
+        inputs:
+          scriptPath: $(kubernetes_script_path)/upload_to_artifactory.sh
+          args: $(artifact_name).zip $(report_dir) $(base_url) $(repo) $(project) $(secret_artifactory_token)
+        displayName: Artifactory upload
