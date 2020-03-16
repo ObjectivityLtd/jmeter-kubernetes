@@ -65,5 +65,5 @@ jobs:
       - task: ShellScript@2
         inputs:
           scriptPath: $(kubernetes_script_path)/upload_to_artifactory.sh
-          args: $(artifact_name).zip $(report_dir) $(base_url) $(repo) $(project) $(secret_artifactory_token)
+          args: $(artifact_name).zip $(report_dir) $(base_url) $(repo) $(project) $(secret_artifactory_token)o
         displayName: 'Artifactory upload'
