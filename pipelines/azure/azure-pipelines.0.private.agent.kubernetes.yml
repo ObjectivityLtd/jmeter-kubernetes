@@ -21,7 +21,7 @@ jobs:
       scale_up_replicas_master: 1
       kubernetes_script_path: kubernetes/bin
       kubernetes_jmeter_master_service: jmeter-master
-      kubernetes_jmeter_slave_service: jmeter-slave
+      kubernetes_jmeter_slave_service: jmeter-slaves
       report_dir: $(System.DefaultWorkingDirectory)/kubernetes/tmp/report
       artifact_name: jmeter_report
       base_url: http://10.1.137.108:8081
