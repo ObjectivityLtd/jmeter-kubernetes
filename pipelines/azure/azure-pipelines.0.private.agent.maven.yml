@@ -49,7 +49,7 @@ jobs:
         displayName: 'Upload to'
 
       - task: ShellScript@2
-          inputs:
-            scriptPath: $(script_path)/upload_to_artifactory.sh
-            args: report.zip $(report_dir) $(base_url) $(repo) $(project)2 AKCp5ekcNd5Mnv4LKsUTqqK8NSKwisBum8zRB37H5sMLLHW8KTc6EfN3e2cLmt99JyTWzA3Bh
-          displayName: Artifactory upload
+        inputs:
+          scriptPath: $(script_path)/upload_to_artifactory.sh
+          args: report.zip $(report_dir) $(base_url) $(repo) $(project)2 AKCp5ekcNd5Mnv4LKsUTqqK8NSKwisBum8zRB37H5sMLLHW8KTc6EfN3e2cLmt99JyTWzA3Bh
+        displayName: Artifactory upload
