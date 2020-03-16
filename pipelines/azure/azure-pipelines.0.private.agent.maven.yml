@@ -13,7 +13,7 @@ jobs:
     variables:
       report_dir:  $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
       jmeter_scenario_pom: 'jmeter/as_maven/pom.xml'
-      jmeter_jvm_options: '-Xmx3072m'
+      xmx: '2048M'
       jmeter_scenario_name: 'cloudssky'
 
 
@@ -31,7 +31,7 @@ jobs:
           jdkArchitectureOption: 'x64'
           publishJUnitResults: true
           testResultsFiles: '**/surefire-reports/TEST-*.xml'
-          goals: 'verify'
+          goals: 'verify -Dxmx=$(xmx)'
 
       - task: PublishPipelineArtifact@1
         displayName: Archive Report for $(jmeter_scenario_name)
