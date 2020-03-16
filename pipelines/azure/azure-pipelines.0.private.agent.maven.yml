@@ -11,7 +11,6 @@ jobs:
   - job: jmeter_pipeline_maven
     pool: private
     variables:
-      script_path: kubernetes/bin
       #jmeter
       report_dir:  $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
       artifact_name: jmeter_report
@@ -19,6 +18,7 @@ jobs:
       xmx: '2048'
       jmeter_scenario_name: 'cloudssky'
 
+      script_path: kubernetes/bin
       #artifactory
       base_url: http://10.1.137.108:8081
       repo: jmeter-artifacts
@@ -36,7 +36,7 @@ jobs:
           jdkArchitectureOption: 'x64'
           publishJUnitResults: true
           testResultsFiles: '**/surefire-reports/TEST-*.xml'
-          goals: 'verify -Dxmx=$(xmx)'
+          goals: 'clean verify -Dxmx=$(xmx)'
 
       - task: PublishPipelineArtifact@1
         displayName: Archive Report for $(jmeter_scenario_name)
