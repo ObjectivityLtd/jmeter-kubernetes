@@ -23,6 +23,7 @@ jobs:
       base_url: http://10.1.137.108:8081
       repo: jmeter-artifacts
       project: cloudssky
+      tribe: testing
 
     timeoutInMinutes: 5
     steps:
@@ -47,5 +48,5 @@ jobs:
       - task: ShellScript@2
         inputs:
           scriptPath: $(script_path)/upload_to_artifactory.sh
-          args: $(artifact_name).zip $(report_dir) $(base_url) $(repo) $(project) $(secret_artifactory_token)
+          args: $(artifact_name).zip $(report_dir) $(base_url) $(repo) $(tribe)/$(project) $(secret_artifactory_token)
         displayName: Artifactory upload
