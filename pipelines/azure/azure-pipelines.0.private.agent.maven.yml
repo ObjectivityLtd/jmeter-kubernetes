@@ -16,6 +16,7 @@ jobs:
       jmeter_scenario_pom: 'jmeter/as_maven/pom.xml'
       xmx: '2048'
       jmeter_scenario_name: 'cloudssky'
+
       #artifactory
       base_url: http://10.1.137.108:8081
       repo: jmeter-artifacts

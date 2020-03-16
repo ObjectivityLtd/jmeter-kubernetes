@@ -13,6 +13,8 @@ RUN apt-get update \
         git \
         mc \
         vim \
+        zip \
+        unzip \
         iputils-ping \
         libcurl3 \
         libicu55 \
