@@ -17,3 +17,7 @@ sed -i 's+type: LoadBalancer+NodePort+g' ../config/deployments/jmeter_grafana_sv
 
 echo "Setting up cluster"
 source jmeter_cluster_create.sh
+
+grafana_host=$(kubectl get pods -n jmeter -l app=jmeter-grafana -o wide | awk '{print $7}' | head -n2 | tail -n1)
+grafana_port=$(kubectl get svc -n jmeter jmeter-grafana  -o yaml | grep nodePort | awk '{print $3}')
+echo "Grafana available at: http://${grafana_host}:${grafana_port}"
