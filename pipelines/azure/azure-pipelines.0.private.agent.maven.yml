@@ -16,16 +16,13 @@ jobs:
       xmx: '2048'
       jmeter_scenario_name: 'cloudssky'
 
-
     timeoutInMinutes: 5
-
     steps:
 
       - task: Maven@3
         displayName: Run $(jmeter_scenario_name) with maven
         inputs:
           mavenPomFile: $(jmeter_scenario_pom)
-          #mavenOptions: $(jmeter_jvm_options)
           javaHomeOption: 'JDKVersion'
           jdkVersionOption: '1.8'
           jdkArchitectureOption: 'x64'
