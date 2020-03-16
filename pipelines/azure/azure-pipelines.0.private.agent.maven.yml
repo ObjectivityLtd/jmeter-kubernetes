@@ -25,7 +25,7 @@ jobs:
         displayName: Run $(jmeter_scenario_name) with maven
         inputs:
           mavenPomFile: $(jmeter_scenario_pom)
-          mavenOptions: $(jmeter_jvm_options)
+          #mavenOptions: $(jmeter_jvm_options)
           javaHomeOption: 'JDKVersion'
           jdkVersionOption: '1.8'
           jdkArchitectureOption: 'x64'
