@@ -54,7 +54,7 @@ jobs:
       - task: ShellScript@2
         inputs:
           scriptPath: $(kubernetes_script_path)/start_test_from_script_params.sh
-          args: $(cluster_namespace) $(scenario)
+          args: $(cluster_namespace) $(scenario) -Gloops=5
         displayName: 'Run test $(scenario)'
 
       - task: PublishPipelineArtifact@1
