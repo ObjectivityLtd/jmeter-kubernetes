@@ -13,7 +13,7 @@ jobs:
     variables:
       report_dir:  $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
       jmeter_scenario_pom: 'jmeter/as_maven/pom.xml'
-      xmx: '2048M'
+      xmx: '2048'
       jmeter_scenario_name: 'cloudssky'
 
 
