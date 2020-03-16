@@ -1,6 +1,8 @@
 #!/bin/bash
 
-#wait until given service scales to desired quantity
+#This is an example of artifactory upload, report_dir is read from pipeline config, token should be provided in azure
+#as secret
+
 upload() {
   artifact_name=$1
   report_dir=$2
@@ -13,4 +15,4 @@ upload() {
 }
 
 #upload.sh report.zip $(report_dir) http://10.1.137.108:8081 jmeter-artifacts cloudssky $(token)
-upload $1 $2 $3 $4 $5 $6ó
+upload $1 $2 $3 $4 $5 $6
