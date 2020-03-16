@@ -13,7 +13,7 @@ upload() {
   id=$(date | sed "s/ /_/g" | sed "s/:/_/g") && cd $report_dir && zip -r $artifact_name .
   http_code=$(curl -s -o /dev/null -w "%{http_code}" -H "X-JFrog-Art-Api:$access_token" -X PUT "${base_url}/artifactory/${repo}/${project}/${id}/${artifact_name}" -T ${artifact_name})
   if [ "$http_code" != "201" ]; then
-    echo "Artifact upload failed with $http_codeó"
+    echo "Artifact upload failed with $http_code"
     exit 1
   fi
 }
