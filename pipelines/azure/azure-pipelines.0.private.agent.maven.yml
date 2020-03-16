@@ -35,3 +35,15 @@ jobs:
         inputs:
           path: $(report_dir)
           artifact: JmeterReport
+
+  - job: upload_to_artifactory
+    variables:
+      base_url: http://10.1.137.108:8081
+      repo: jmeter-artifacts
+      project: cloudssky
+    steps:
+      - script: |
+          ls -alh  $(Pipeline.Workspace)
+          touch dummy.txt
+          curl -H "X-JFrog-Art-Api:AP4yHSBNngiVUoe8g2icue4efQN" -X PUT "$(base_url)/artifactory/$(repo)/$(project)/$(BuildID)/file.txt" -T dummy.txt
+          displayName: 'Upload to'
