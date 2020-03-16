@@ -45,6 +45,7 @@ jobs:
     steps:
       - script: |
           ls -alh  $(Pipeline.Workspace)
+          id=$(date | sed "s/ /_/g" | sed "s/:/_/g")
           touch dummy.txt
-          curl -H "X-JFrog-Art-Api:AKCp5ekcNd5Mnv4LKsUTqqK8NSKwisBum8zRB37H5sMLLHW8KTc6EfN3e2cLmt99JyTWzA3Bh" -X PUT "$(base_url)/artifactory/$(repo)/$(project)/$(BuildID)/file.txt" -T dummy.txt
-          displayName: 'Upload to'
+          curl -H "X-JFrog-Art-Api:AKCp5ekcNd5Mnv4LKsUTqqK8NSKwisBum8zRB37H5sMLLHW8KTc6EfN3e2cLmt99JyTWzA3Bh" -X PUT "$(base_url)/artifactory/$(repo)/$(project)/${id}/file.txt" -T dummy.txt
+        displayName: 'Upload to'
