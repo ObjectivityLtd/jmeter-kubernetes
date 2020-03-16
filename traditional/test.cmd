@@ -1,0 +1,1 @@
+C:\Users\gstarczewski\tools\apache-jmeter-5.2.1\bin\jmeter.bat  -R10.1.137.110 -n -t C:\Users\gstarczewski\repos\jmeter-kubernetes-objectivity\jmeter\as_jmx\cloudssky.jmx
