@@ -11,6 +11,7 @@ jobs:
   - job: jmeter_pipeline_maven
     pool: private
     variables:
+      script_path: kubernetes/bin
       #jmeter
       report_dir:  $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
       jmeter_scenario_pom: 'jmeter/as_maven/pom.xml'
@@ -43,6 +44,12 @@ jobs:
           artifact: JmeterReport
 
       - script: |
-          id=$(date | sed "s/ /_/g" | sed "s/:/_/g") && zip -r report.zip  $(report_dir)
-          curl -H "X-JFrog-Art-Api:AKCp5ekcNd5Mnv4LKsUTqqK8NSKwisBum8zRB37H5sMLLHW8KTc6EfN3e2cLmt99JyTWzA3Bh" -X PUT "$(base_url)/artifactory/$(repo)/$(project)/${id}/file.txt" -T report.zip
+          id=$(date | sed "s/ /_/g" | sed "s/:/_/g") && zip -r report.zip $(report_dir)
+          curl -H "X-JFrog-Art-Api:AKCp5ekcNd5Mnv4LKsUTqqK8NSKwisBum8zRB37H5sMLLHW8KTc6EfN3e2cLmt99JyTWzA3Bh" -X PUT "$(base_url)/artifactory/$(repo)/$(project)/${id}/report.zip" -T report.zip
         displayName: 'Upload to'
+
+      - task: ShellScript@2
+          inputs:
+            scriptPath: $(script_path)/upload_to_artifactory.sh
+            args: report.zip $(report_dir) $(base_url) $(repo) $(project)2 AKCp5ekcNd5Mnv4LKsUTqqK8NSKwisBum8zRB37H5sMLLHW8KTc6EfN3e2cLmt99JyTWzA3Bh
+          displayName: Artifactory upload
