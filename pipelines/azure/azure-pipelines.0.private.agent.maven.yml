@@ -10,7 +10,7 @@ variables:
   jmeter_scenario_name: 'cloudssky'
 
 jobs:
-  - job: Run $(jmeter_scenario_name) tests
+  - job: Run_$(jmeter_scenario_name)_tests
     pool: private
     variables:
       report_dir:  $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
