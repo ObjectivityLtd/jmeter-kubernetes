@@ -37,6 +37,7 @@ jobs:
           artifact: JmeterReport
 
   - job: upload_to_artifactory
+    pool: private
     variables:
       base_url: http://10.1.137.108:8081
       repo: jmeter-artifacts
