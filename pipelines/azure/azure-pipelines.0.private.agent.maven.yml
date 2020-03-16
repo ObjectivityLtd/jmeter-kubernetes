@@ -9,16 +9,21 @@ trigger:
 jobs:
   - job: Run_Jmeter_Tests
     pool: private
+    variables:
+      report_dir:  $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
+      jmeter_scenario_pom: 'jmeter/as_maven/pom.xml'
+      jmeter_scenario_name: 'cloudssky'
+      jmeter_jvm_options: '-Xmx3072m'
 
     timeoutInMinutes: 5
 
     steps:
 
       - task: Maven@3
-        displayName: Run JMeter Tests
+        displayName: Run $(jmeter_scenario_name) with maven
         inputs:
-          mavenPomFile: 'jmeter/as_maven/pom.xml'
-          mavenOptions: '-Xmx3072m'
+          mavenPomFile: $(jmeter_scenario_pom)
+          mavenOptions: $(jmeter_jvm_options)
           javaHomeOption: 'JDKVersion'
           jdkVersionOption: '1.8'
           jdkArchitectureOption: 'x64'
@@ -26,13 +31,8 @@ jobs:
           testResultsFiles: '**/surefire-reports/TEST-*.xml'
           goals: 'verify'
 
-      - task: CmdLine@2
-        displayName: List JMeter ReportDir
-        inputs:
-          script: 'ls -alh $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports'
-
       - task: PublishPipelineArtifact@1
-        displayName: Archive JMeter Report
+        displayName: Archive Report for $(jmeter_scenario_name)
         inputs:
-          path: $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
+          path: $(report_dir)
           artifact: JmeterReport
