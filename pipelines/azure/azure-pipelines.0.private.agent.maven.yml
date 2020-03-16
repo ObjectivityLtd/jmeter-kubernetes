@@ -6,16 +6,16 @@
 name: $(BuildID)
 trigger:
   - master
-variables:
-  jmeter_scenario_name: 'cloudssky'
 
 jobs:
-  - job: Run_$(jmeter_scenario_name)_tests
+  - job: jmeter_pipeline_maven
     pool: private
     variables:
       report_dir:  $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
       jmeter_scenario_pom: 'jmeter/as_maven/pom.xml'
       jmeter_jvm_options: '-Xmx3072m'
+      jmeter_scenario_name: 'cloudssky'
+
 
     timeoutInMinutes: 5
 
