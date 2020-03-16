@@ -20,6 +20,8 @@ jobs:
       scale_up_replicas_slaves: 1
       scale_up_replicas_master: 1
       kubernetes_script_path: kubernetes/bin
+      kubernetes_jmeter_master_service: jmeter-master
+      kubernetes_jmeter_slave_service: jmeter-slave
       report_dir: $(System.DefaultWorkingDirectory)/kubernetes/tmp/report
       artifact_name: jmeter_report
       base_url: http://10.1.137.108:8081
@@ -30,52 +32,38 @@ jobs:
 
     steps:
       - script: |
-          kubectl scale deployment jmeter-master --replicas=$(scale_down_replicas) -n $(cluster_namespace)
-        displayName: 'Scale down master to $(scale_down_replicas)'
-
-      - script: |
-          kubectl scale deployment jmeter-master --replicas=$(scale_up_replicas_master) -n $(cluster_namespace)
-        displayName: 'Scale up master to $(scale_up_replicas_master)'
-
-      - script: |
-          kubectl scale deployment jmeter-slaves --replicas=$(scale_down_replicas) -n $(cluster_namespace)
-        displayName: 'Scale down slaves to $(scale_down_replicas)'
-
-      - script: |
-          kubectl scale deployment jmeter-slaves --replicas=$(scale_up_replicas_slaves) -n $(cluster_namespace)
-        displayName: 'Scale up slaves to $(scale_up_replicas_slaves)'
+          kubectl scale deployment $(kubernetes_jmeter_master_service) --replicas=$(scale_down_replicas) -n $(cluster_namespace)
+          kubectl scale deployment $(kubernetes_jmeter_master_service) --replicas=$(scale_up_replicas_master) -n $(cluster_namespace)
+          kubectl scale deployment $(kubernetes_jmeter_slave_service) --replicas=$(scale_down_replicas) -n $(cluster_namespace)
+          kubectl scale deployment $(kubernetes_jmeter_slave_service) --replicas=$(scale_up_replicas_slaves) -n $(cluster_namespace)
+        displayName: 'Reset cluster'
 
       - task: ShellScript@2
-        displayName: Wait until service jmeter-master rescales
         inputs:
           scriptPath: $(kubernetes_script_path)/wait_for_service_to_scale.sh
           args: $(cluster_namespace) jmeter-master 1 5
+        displayName: 'Wait until service jmeter-master rescales'
 
       - task: ShellScript@2
-        displayName: Wait until service jmeter-slaves rescales
         inputs:
           scriptPath: $(kubernetes_script_path)/wait_for_service_to_scale.sh
           args: $(cluster_namespace) jmeter-slaves 1 5
+        displayName: 'Wait until service jmeter-slaves rescales'
 
       - task: ShellScript@2
         inputs:
           scriptPath: $(kubernetes_script_path)/start_test_from_script_params.sh
           args: $(cluster_namespace) $(scenario)
-        displayName: Run test $(scenario)
-
-      - task: CmdLine@2
-        displayName: List JMeter ReportDir
-        inputs:
-          script: 'ls -alh $(report_dir)'
+        displayName: 'Run test $(scenario)'
 
       - task: PublishPipelineArtifact@1
-        displayName: Archive JMeter Report
         inputs:
           path: $(report_dir)
           artifact: $(artifact_name)
+        displayName: 'Archive JMeter Report'
 
       - task: ShellScript@2
         inputs:
           scriptPath: $(kubernetes_script_path)/upload_to_artifactory.sh
           args: $(artifact_name).zip $(report_dir) $(base_url) $(repo) $(project) $(secret_artifactory_token)
-        displayName: Artifactory upload
+        displayName: 'Artifactory upload'
