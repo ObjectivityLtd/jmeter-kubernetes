@@ -27,6 +27,7 @@ server_xmx=$4
 shift 4
 jmeter_servers=$("$@")
 
+echo "jmeter xmx: ${server_xmx}"
 echo "jmeter servers: ${jmeter_servers}"
 
 reset_slaves "${flask_control_port}" "${jmeter_server_version}" "${server_xms}" "${server_xmx}" "${jmeter_servers[@]}"
