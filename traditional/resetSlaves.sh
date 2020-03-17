@@ -16,6 +16,7 @@ reset_slaves() {
     echo "Operation failed with code:  $http_code"
     exit 1
     fi
+    echo "Result: ${http_code}"
   done
 }
 
