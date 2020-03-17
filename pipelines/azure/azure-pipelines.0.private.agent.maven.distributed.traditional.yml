@@ -45,7 +45,7 @@ jobs:
             do
               curl -X GET http://${host}:$(flask_control_port)/restart/$(jmeter_server_version)/$(server_xms)/$(server_xmx)
             done
-        displayName: 'Reset cluster'
+        displayName: 'Reset cluster: $(jmeter_servers)'
 
       - task: Maven@3
         displayName: Run $(jmeter_scenario_name) with maven
@@ -64,7 +64,7 @@ jobs:
           do
             curl -X GET http://${host}:$(flask_control_port)/stop
           done
-        displayName: 'Stop cluster'
+        displayName: 'Stop cluster: $(jmeter_servers)'
 
       - task: PublishPipelineArtifact@1
         displayName: Archive Report for $(jmeter_scenario_name)

@@ -21,7 +21,6 @@
     <properties>
         <maxUsers>1</maxUsers>
         <testScenario>example-performance-test.jmx</testScenario>
-        <dockerhost_ip>10.1.137.108</dockerhost_ip>
         <jmeter_servers></jmeter_servers>
         <xmx>1024</xmx>
         <maven.compiler.source>1.8</maven.compiler.source>
