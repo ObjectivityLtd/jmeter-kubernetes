@@ -21,6 +21,7 @@
     <properties>
         <maxUsers>1</maxUsers>
         <testScenario>example-performance-test.jmx</testScenario>
+        <dockerhost_ip>10.1.137.108</dockerhost_ip>
         <jmeter_servers></jmeter_servers>
         <xmx>1024</xmx>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -45,13 +46,11 @@
                 </executions>
                 <configuration>
                     <propertiesUser>
-                        <java.rmi.server.hostname>10.1.137.108</java.rmi.server.hostname>
                         <server.rmi.ssl.disable>true</server.rmi.ssl.disable>
                         <maxUsers>${maxUsers}</maxUsers>
                     </propertiesUser>
 
                     <propertiesGlobal>
-                        <java.rmi.server.hostname>10.1.137.108</java.rmi.server.hostname>
                         <server.rmi.ssl.disable>true</server.rmi.ssl.disable>
                         <maxUsers>${maxUsers}</maxUsers>
                     </propertiesGlobal>
@@ -62,6 +61,9 @@
                     <jMeterProcessJVMSettings>
                         <xms>1024</xms>
                         <xmx>${xmx}</xmx>
+                        <arguments>
+                            <argument>-Djava.rmi.server.hostname=${dockerhost_ip</argument>
+                        </arguments>
                     </jMeterProcessJVMSettings>
                     <remoteConfig>
                         <startServersBeforeTests>true</startServersBeforeTests>
