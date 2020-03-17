@@ -51,6 +51,7 @@
                     </propertiesUser>
 
                     <propertiesGlobal>
+                        <java.rmi.server.hostname>10.1.137.108</java.rmi.server.hostname>
                         <server.rmi.ssl.disable>true</server.rmi.ssl.disable>
                         <maxUsers>${maxUsers}</maxUsers>
                     </propertiesGlobal>
