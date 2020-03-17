@@ -35,7 +35,7 @@ jobs:
     timeoutInMinutes: 5
     steps:
       - script: |
-             http://$(jmeter_server1):$(flask_control_port)/restart/$(jmeter_server_version)/$(xms)/$(xmx)
+             curl -X GET http://$(jmeter_server1):$(flask_control_port)/restart/$(jmeter_server_version)/$(server_xms)/$(server_xmx)
         displayName: 'Reset cluster'
 
       - task: Maven@3
