@@ -8,11 +8,11 @@ reset_slaves() {
   shift 4
   #string to list
   IFS=' ' read -r -a servers <<< "$@"
-  echo "Servers: ${servers[@]}"
+  echo "Servers parsed: ${servers[@]}"
   for host in "${servers[@]}"; do
     command="curl -s -o /dev/null -w \"%{http_code}\" -X GET http://${host}:${flask_control_port}/restart/${jmeter_server_version}/${server_xms}/${server_xmx}"
     echo "${command}"
-    http_code=$("$command")
+    http_code=$(echo "$command" | bash)
     if [ "$http_code" != "200" ]; then
     echo "Operation failed with code:  $http_code"
     exit 1
