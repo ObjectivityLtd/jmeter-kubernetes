@@ -43,7 +43,7 @@ jobs:
       - task: ShellScript@2
         inputs:
           scriptPath: $(script_path)/resetSlaves.sh
-          args: $(flask_control_port) $(jmeter_server_version) $(server_xms) $(server_xmx) $(jmeter_servers)
+          args: $(flask_control_port) $(jmeter_server_version) $(server_xms) $(server_xmx) $(jmeter_servers) 10.1.137.110
         displayName: 'Reset cluster: $(jmeter_servers)'
 
       - script: |
