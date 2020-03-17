@@ -9,7 +9,7 @@ reset_slaves() {
   local jmeter_servers=("$@")
 
   for host in "${jmeter_servers[@]}"; do
-    command="curl -s -o /dev/null -w \"%{http_code}\" -X GET http://${host}:${flask_control_port}/restart/${jmeter_server_version}/${server_xms)}/${server_xmx}"
+    command="curl -s -o /dev/null -w '%{http_code}' -X GET http://${host}:${flask_control_port}/restart/${jmeter_server_version}/${server_xms}/${server_xmx}"
     echo "c: ${command}"
     http_code=$(command)
     if [ "$http_code" != "200" ]; then
