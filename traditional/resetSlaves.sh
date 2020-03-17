@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This script resets all jmeter slaves by calling control endpoint (flask) on teh server that fires starServer.sh
+#
+#
 reset_slaves() {
   local flask_control_port=$1
   local jmeter_server_version=$2
