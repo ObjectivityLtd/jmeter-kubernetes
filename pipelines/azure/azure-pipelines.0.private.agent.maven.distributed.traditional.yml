@@ -28,13 +28,13 @@ jobs:
       server_xmx: 2048m
       server_xms: 1024m
       jmeter_server_version: apache-jmeter-5.2.1
-      jmeter_server1: 10.1.137.110
+      jmeter_servers: 10.1.137.110 10.1.137.110
       flask_control_port: 5000
 
     timeoutInMinutes: 5
     steps:
       - script: |
-            hosts=( "$(jmeter_server1)" )
+            hosts=( $(jmeter_servers) )
             for host in "${hosts[@]}"
             do
               curl -X GET http://${host}:$(flask_control_port)/restart/$(jmeter_server_version)/$(server_xms)/$(server_xmx)
@@ -53,7 +53,11 @@ jobs:
           goals: 'clean verify -Dxmx=$(xmx)'
 
       - script: |
-          curl -X GET http://$(jmeter_server1):$(flask_control_port)/stop
+          hosts=( $(jmeter_servers) )
+          for host in "${hosts[@]}"
+          do
+            curl -X GET http://${host}:$(flask_control_port)/stop
+          done
         displayName: 'Stop cluster'
 
       - task: PublishPipelineArtifact@1
