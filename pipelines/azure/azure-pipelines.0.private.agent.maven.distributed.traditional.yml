@@ -33,7 +33,11 @@ jobs:
     timeoutInMinutes: 5
     steps:
       - script: |
-             curl -X GET http://$(jmeter_server1):$(flask_control_port)/restart/$(jmeter_server_version)/$(server_xms)/$(server_xmx)
+            hosts=( "$(jmeter_server1)" )
+            for host in "${hosts[@]}"
+            do
+              curl -X GET http://${host}:$(flask_control_port)/restart/$(jmeter_server_version)/$(server_xms)/$(server_xmx)
+            done
         displayName: 'Reset cluster'
 
       - task: Maven@3
@@ -47,6 +51,10 @@ jobs:
           testResultsFiles: '**/surefire-reports/TEST-*.xml'
           goals: 'clean verify -Dxmx=$(xmx)'
 
+      - script: |
+          curl -X GET http://$(jmeter_server1):$(flask_control_port)/stop
+        displayName: 'Stop cluster'
+        -
       - task: PublishPipelineArtifact@1
         displayName: Archive Report for $(jmeter_scenario_name)
         inputs:
