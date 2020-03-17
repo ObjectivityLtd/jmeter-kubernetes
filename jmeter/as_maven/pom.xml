@@ -61,9 +61,11 @@
                     <jMeterProcessJVMSettings>
                         <xms>1024</xms>
                         <xmx>${xmx}</xmx>
+                        <!--
                         <arguments>
                             <argument>-Djava.rmi.server.hostname=${dockerhost_ip}</argument>
                         </arguments>
+                        -->
                     </jMeterProcessJVMSettings>
                     <remoteConfig>
                         <startServersBeforeTests>true</startServersBeforeTests>
