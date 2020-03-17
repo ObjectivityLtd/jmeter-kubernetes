@@ -8,9 +8,9 @@ reset_slaves() {
   shift 4
   #string to list
   IFS=' ' read -r -a servers <<< "$@"
-  echo "Servers: $servers"
+  echo "Servers: ${servers[@]}"
   for host in "${servers[@]}"; do
-    command="curl -s -o /dev/null -w '%{http_code}' -X GET http://${host}:${flask_control_port}/restart/${jmeter_server_version}/${server_xms}/${server_xmx}"
+    command="curl -s -o /dev/null -w \"%{http_code}"\ -X GET http://${host}:${flask_control_port}/restart/${jmeter_server_version}/${server_xms}/${server_xmx}"
     echo "${command}"
     http_code=$(command)
     if [ "$http_code" != "200" ]; then
