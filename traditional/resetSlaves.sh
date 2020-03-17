@@ -9,8 +9,8 @@ reset_slaves() {
   local jmeter_servers=("$@")
 
   for host in "${jmeter_servers[@]}"; do
-    echo "curl -X GET http://${host}:${flask_control_port}/restart/${jmeter_server_version}/${server_xms)}/${server_xmx}"
-    curl -X GET http://${host}:${flask_control_port}/restart/${jmeter_server_version}/${server_xms)}/${server_xmx}
+    command="curl -X GET http://${host}:${flask_control_port}/restart/${jmeter_server_version}/${server_xms)}/${server_xmx}"
+    echo "${command}" && $(command)
   done
 }
 
