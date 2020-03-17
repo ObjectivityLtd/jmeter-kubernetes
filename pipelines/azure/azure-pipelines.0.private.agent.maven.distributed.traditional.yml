@@ -54,7 +54,7 @@ jobs:
       - script: |
           curl -X GET http://$(jmeter_server1):$(flask_control_port)/stop
         displayName: 'Stop cluster'
-        -
+
       - task: PublishPipelineArtifact@1
         displayName: Archive Report for $(jmeter_scenario_name)
         inputs:
