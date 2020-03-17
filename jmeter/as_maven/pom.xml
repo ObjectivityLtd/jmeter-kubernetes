@@ -49,6 +49,7 @@
                     </propertiesUser>
 
                     <propertiesGlobal>
+                        <server.rmi.ssl.disable>true</server.rmi.ssl.disable>
                         <maxUsers>${maxUsers}</maxUsers>
                     </propertiesGlobal>
 
