@@ -60,7 +60,9 @@
                         <xmx>${xmx}</xmx>
                     </jMeterProcessJVMSettings>
                     <remoteConfig>
+                        <startServersBeforeTests>true</startServersBeforeTests>
                         <serverList>${jmeter_servers}</serverList>
+                        <stopServersAfterTests>false</stopServersAfterTests>
                     </remoteConfig>
                 </configuration>
             </plugin>
