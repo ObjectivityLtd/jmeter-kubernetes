@@ -24,8 +24,7 @@ flask_control_port=$1
 jmeter_server_version=$2
 server_xms=$3
 server_xmx=$4
-shift 4
-jmeter_servers=$("$@")
+jmeter_servers=$5
 
 echo "jmeter xmx: ${server_xmx}"
 echo "jmeter servers: ${jmeter_servers}"
