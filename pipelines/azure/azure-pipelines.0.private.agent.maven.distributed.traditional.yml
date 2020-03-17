@@ -4,6 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 #https://dev.azure.com/gstarczewski/jmeter/_apis/build/builds?api-version=5.1
 name: $(BuildID)
+trigger: none
 
 jobs:
   - job: jmeter_pipeline_maven

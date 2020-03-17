@@ -8,6 +8,8 @@
 #so that cluster can be accessed with kubectl remotely
 
 name: $(BuildID)
+trigger: none
+
 jobs:
   - job: Run_Jmeter_Tests
     pool: private
