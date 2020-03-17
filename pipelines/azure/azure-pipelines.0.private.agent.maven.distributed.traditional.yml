@@ -28,7 +28,8 @@ jobs:
       server_xmx: 2048m
       server_xms: 1024m
       jmeter_server_version: apache-jmeter-5.2.1
-      jmeter_servers: 10.1.137.110 10.1.137.110
+      #space separated
+      jmeter_servers: 10.1.137.110
       flask_control_port: 5000
 
     timeoutInMinutes: 5
