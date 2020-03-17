@@ -45,6 +45,7 @@
                 </executions>
                 <configuration>
                     <propertiesUser>
+                        <server.rmi.ssl.disable>true</server.rmi.ssl.disable>
                         <maxUsers>${maxUsers}</maxUsers>
                     </propertiesUser>
 
