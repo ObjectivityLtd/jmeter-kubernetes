@@ -1,0 +1,62 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+#https://dev.azure.com/gstarczewski/jmeter/_apis/build/builds?api-version=5.1
+name: $(BuildID)
+trigger:
+  - master
+
+jobs:
+  - job: jmeter_pipeline_maven
+    pool: private
+    variables:
+      #jmeter
+      report_dir:  $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
+      artifact_name: jmeter_report
+      jmeter_scenario_pom: 'jmeter/as_maven/pom.xml'
+      xmx: '2048'
+      jmeter_scenario_name: 'cloudssky'
+
+      script_path: kubernetes/bin
+      #artifactory
+      base_url: http://10.1.137.108:8081
+      repo: jmeter-artifacts
+      project: cloudssky
+      tribe: testing
+
+      #remote farm
+      server_xmx: 2048m
+      server_xms: 1024m
+      jmeter_server_version: apache-jmeter-5.2.1
+      jmeter_server1: 10.1.137.110
+      flask_control_port: 5000
+
+    timeoutInMinutes: 5
+    steps:
+      - script: |
+             http://$(jmeter_server1):$(flask_control_port)/restart/$(jmeter_server_version)/$(xms)/$(xmx)
+        displayName: 'Reset cluster'
+
+      - task: Maven@3
+        displayName: Run $(jmeter_scenario_name) with maven
+        inputs:
+          mavenPomFile: $(jmeter_scenario_pom)
+          javaHomeOption: 'JDKVersion'
+          jdkVersionOption: '1.8'
+          jdkArchitectureOption: 'x64'
+          publishJUnitResults: true
+          testResultsFiles: '**/surefire-reports/TEST-*.xml'
+          goals: 'clean verify -Dxmx=$(xmx)'
+
+      - task: PublishPipelineArtifact@1
+        displayName: Archive Report for $(jmeter_scenario_name)
+        inputs:
+          path: $(report_dir)
+          artifact: $(artifact_name)
+
+      - task: ShellScript@2
+        inputs:
+          scriptPath: $(script_path)/upload_to_artifactory.sh
+          args: $(artifact_name).zip $(report_dir) $(base_url) $(repo) $(tribe)/$(project) $(secret_artifactory_token)
+        displayName: Artifactory upload
