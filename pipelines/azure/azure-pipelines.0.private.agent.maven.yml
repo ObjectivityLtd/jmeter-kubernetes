@@ -36,7 +36,7 @@ jobs:
           jdkArchitectureOption: 'x64'
           publishJUnitResults: true
           testResultsFiles: '**/surefire-reports/TEST-*.xml'
-          goals: 'clean verify -Dxmx=$(xmx)'
+          goals: '-P local clean verify -Dxmx=$(xmx)'
 
       - task: PublishPipelineArtifact@1
         displayName: Archive Report for $(jmeter_scenario_name)
