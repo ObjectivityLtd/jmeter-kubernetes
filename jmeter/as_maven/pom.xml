@@ -24,8 +24,8 @@
         <maxUsers>1</maxUsers>
         <testScenario>example-performance-test.jmx</testScenario>
         <jmeter_servers></jmeter_servers>
-        <xmx>1024m</xmx>
-        <xms>512m</xms>
+        <xmx>1024</xmx>
+        <xms>512</xms>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
