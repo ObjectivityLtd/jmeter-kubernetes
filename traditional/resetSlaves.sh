@@ -5,7 +5,7 @@ reset_slaves() {
   local jmeter_server_version=$2
   local server_xms=$3
   local server_xmx=$4
-  shift 4
+  shift 5
   local jmeter_servers=("$@")
 
   for host in "${jmeter_servers[@]}"; do
