@@ -3,7 +3,8 @@
 3. Install python requirements: pip install -r requirements.txt
 4. Start controller in the background
 
-   ./jmeter_controller.py &
+   nohup python jmeter_controller.py > custom-out.log &
+
 
 Run pipeline:
 

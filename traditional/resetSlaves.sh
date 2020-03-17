@@ -12,7 +12,7 @@ reset_slaves() {
   for host in "${servers[@]}"; do
     command="curl -s -o /dev/null -w \"%{http_code}\" -X GET http://${host}:${flask_control_port}/restart/${jmeter_server_version}/${server_xms}/${server_xmx}"
     echo "${command}"
-    http_code=$(command)
+    http_code=$("$command")
     if [ "$http_code" != "200" ]; then
     echo "Operation failed with code:  $http_code"
     exit 1
