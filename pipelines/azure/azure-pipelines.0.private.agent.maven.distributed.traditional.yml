@@ -10,6 +10,7 @@ jobs:
   - job: jmeter_pipeline_maven
     pool: private
     variables:
+      group: secrets
       #jmeter
       report_dir:  $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
       artifact_name: jmeter_report
@@ -62,6 +63,12 @@ jobs:
           scriptPath: $(script_path)/stopSlaves.sh
           args: $(flask_control_port) $(jmeter_servers)
         displayName: 'Stop cluster: $(jmeter_servers)'
+
+      - task: ShellScript@2
+        inputs:
+          scriptPath: $(script_path)/upload_to_artifactory.sh
+          args: $(artifact_name).zip $(report_dir) $(base_url) $(repo) $(tribe)/$(project) $(secret_artifactory_token)
+        displayName: Artifactory upload
 
       - task: PublishPipelineArtifact@1
         displayName: Archive Report for $(jmeter_scenario_name)
