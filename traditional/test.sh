@@ -5,5 +5,5 @@
 
 #To test endpoints
 
-curl -X GET http://10.1.137.110:5000/restart/apache-jmeter-5.2.1/1024m/3048m
-curl -X GET http://10.1.137.110:5000/stop
+curl --user user:pass -X GET http://10.1.137.110:5000/restart/apache-jmeter-5.2.1/1024m/3048m
+curl --user user:pass -X GET http://10.1.137.110:5000/stop

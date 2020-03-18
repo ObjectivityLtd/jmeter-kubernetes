@@ -5,6 +5,7 @@
 
 working_dir=$(pwd)/../config/deployments
 tmp_dir=$(pwd)/../tmp
+tenant=$1
 
 echo "checking if kubectl is present"
 
@@ -25,9 +26,13 @@ kubectl get namespaces | grep -v NAME | awk '{print $1}'
 
 echo
 
-echo "Enter the name of the new tenant unique name, this will be used to create the namespace"
-read tenant
-echo
+if [ -n "$tenant" ]; then
+  echo "Using namespace: $tenant"
+else
+  echo "Enter the name of the new tenant unique name, this will be used to create the namespace"
+  read tenant
+  echo
+fi
 
 #Check If namespace exists
 
