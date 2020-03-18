@@ -12,27 +12,45 @@ jobs:
     variables:
       - group: secrets
       #jmeter
-      report_dir:  $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
-      artifact_name: jmeter_report
-      jmeter_scenario_pom: 'jmeter/as_maven/pom.xml'
-      xmx: '2048'
-      jmeter_scenario_name: 'cloudssky'
+      - name: report_dir
+        value: $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
+      - name: artifact_name
+        value: jmeter_report
+      - name: jmeter_scenario_pom
+        value: 'jmeter/as_maven/pom.xml'
+      - name: xmx
+        value: '2048'
+      - name: jmeter_scenario_name
+        value: 'cloudssky'
+      - name: script_path
+        value: traditional
+      - name: script_path_arti
+        value: kubernetes/bin
 
-      script_path: traditional
-      script_path_arti: kubernetes/bin
       #artifactory
-      base_url: http://10.1.137.108:8081
-      repo: jmeter-artifacts
-      project: cloudssky
-      tribe: testing
+      - name: base_url
+        value: http://10.1.137.108:8081
+      - name: script_path_arti
+        value: kubernetes/bin
+      - name: repo
+        value:  jmeter-artifacts
+      - name: project
+        value: cloudssky
+      - name: tribe
+        value: testing
 
       #remote farm
-      server_xmx: 2048m
-      server_xms: 1024m
-      jmeter_server_version: apache-jmeter-5.2.1
-      #space separated
-      jmeter_servers: 10.1.137.110
-      flask_control_port: 5000
+      - name: server_xmx
+        value: 2048m
+      - name: server_xms
+        value: 1024m
+      - name: jmeter_server_version
+        value: apache-jmeter-5.2.1
+        #space separated ip1 ip2 ...
+      - name: jmeter_servers
+        value: 10.1.137.110
+      - name: flask_control_port
+        value: 5000
 
     timeoutInMinutes: 5
     steps:
