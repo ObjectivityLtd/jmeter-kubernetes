@@ -19,6 +19,7 @@ jobs:
       jmeter_scenario_name: 'cloudssky'
 
       script_path: traditional
+      script_path_arti: kubernetes/bin
       #artifactory
       base_url: http://10.1.137.108:8081
       repo: jmeter-artifacts
@@ -66,7 +67,7 @@ jobs:
 
       - task: ShellScript@2
         inputs:
-          scriptPath: $(script_path)/upload_to_artifactory.sh
+          scriptPath: $(script_path_arti)/upload_to_artifactory.sh
           args: $(artifact_name).zip $(report_dir) $(base_url) $(repo) $(tribe)/$(project) $(secret_artifactory_token)
         displayName: Artifactory upload
 
