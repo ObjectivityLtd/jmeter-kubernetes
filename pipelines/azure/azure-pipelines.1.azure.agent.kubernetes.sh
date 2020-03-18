@@ -1,11 +1,10 @@
 #!/bin/bash
 #How to prepare all necessary azure resources to keep cost under control ?
 #Note: all of this can also be done in UI, howver for automartion I am presenting a CLI version.
-#PART 1 - create a kubernetes cluster in Azure, execute as one command:
-#rm -Rf jmeter-kubernetes && git clone https://github.com/ObjectivityLtd/jmeter-kubernetes && cd jmeter-kubernetes/pipelines/azure && ./azure-pipelines.1.azure.agent.kubernetes.sh
+#execute this in CLI:
+#cd ~ && rm -Rf jmeter-kubernetes && git clone https://github.com/ObjectivityLtd/jmeter-kubernetes && cd jmeter-kubernetes/pipelines/azure && chmod +x *.sh && ./azure-pipelines.1.azure.agent.kubernetes.sh
 
 #config
-
 group_name=jmeter-group
 location=uksouth
 cluster_name=jubernetes
@@ -15,6 +14,8 @@ node_size=Standard_D2_v2
 node_count=5
 home_dir=$(pwd)
 test_jmx="cloudssky.jmx"
+
+#PART 1 - create a kubernetes cluster in Azure, execute as one command:
 
 #1. Open Azure CLI
 #2. Delete entire resource group if exist:
@@ -34,18 +35,30 @@ test_jmx="cloudssky.jmx"
     echo "Process to deploy jmeter kubernetes ?"
     read answer
     echo
-#7 Checking out the project
-#8 Deploy
+#7 Deploy
     echo "Deploying solution to namespace $cluster_namespace"
-    cd ../../kubernetes/bin && ./jmeter_cluster_create.sh "$cluster_namespace" && ./dashboard
+    cd ../../kubernetes/bin && chmod +x *.sh && ./jmeter_cluster_create.sh "$cluster_namespace"
+    #wait for all pods to get deployed
+    #kubectl -n jmeter get all | grep pod/influxdb-jmeter | awk '{print $2}' -> 1/1
+    #kubectl -n jmeter get all | grep pod/jmeter-master | awk '{print $2}' -> 1/1
+    #kubectl -n jmeter get all | grep pod/jmeter-grafana | awk '{print $2}' -> 1/1
+#8 Create dashboards
+    echo "Creating grafana dashboards"
+    ./dashboard.sh
 #9 Test
     echo "Test solution by running $test_jmx?"
     read answer
     echo
     ./start_test.sh
-#10
-    echo "You can now process to import Grafana Dashboard at .."
+#10 Remaining
+    echo "Go to https://dev.azure.com/{organization}/{project}/_admin/_services to create a kubernetes service connection"
+    echo "You can now process to import Grafana Dashboard at .. automate with Selenium/Python 3.5.2"
+    echo "Login toyoru grafana at ...."
+    echo "Create aks service connection and permision all pipleines to ise"
     echo "And create your pipeline in yoru azure devops"
+    echo "get ARtifactory credentials if you plan to use ARtifactiry step"
+    echo "Configure credentials"
+
 
 
 
