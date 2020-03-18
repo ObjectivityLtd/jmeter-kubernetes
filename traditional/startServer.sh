@@ -1,9 +1,10 @@
 #!/bin/bash
 
 restart_jmeter_server() {
+  home=$(pwd)
   version=$1
   heap=$2
-  killall "/usr/bin/java" || :
+  source stopServer.sh
   export HEAP="$heap"
   cd ${version}/bin
   ./jmeter-server -Jserver.rmi.ssl.disable=true &
@@ -14,11 +15,11 @@ restart_jmeter_server() {
          sleep 3
          echo "pid: $pid, waiting for new pid"
   done
-  echo "$pid"
+  cd "$home"
+  echo "$pid">jmeter.pid
 }
 
 version=$1
 xms=$2
 xmx=$3
 restart_jmeter_server "${version}" "${xms} ${xmx}"
-~

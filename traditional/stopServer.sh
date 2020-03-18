@@ -2,7 +2,7 @@
 
 
 stop_jmeter_server() {
-  killall "/usr/bin/java" || :
+   kill -9 $(cat jmeter.pid)  || :
 }
 
 stop_jmeter_server

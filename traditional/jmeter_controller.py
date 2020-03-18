@@ -17,12 +17,16 @@ app.config['BASIC_AUTH_FORCE'] = True
 
 @app.route('/restart/<version>/<xms>/<xmx>')
 def restart(version,xms,xmx,methods=['GET']):
+    pid=0
     if sys.platform == "linux" or sys.platform == "linux2":
         try:
             subprocess.call(["./startServer.sh",version,"-Xms%s -Xmx%s" %(xms,xmx)])
+            f=open('jmeter.pid')
+            pid=f.read()
+            f.close()
         except:
             return "Error",400
-        return "Node restarted"
+        return "Node restarted with pid: %s" %pid
 
 @app.route('/stop')
 def stop(methods=['GET']):
@@ -36,4 +40,3 @@ def stop(methods=['GET']):
 
 
 if __name__ == '__main__':
-    app.run(host='10.1.137.110', port=5000, debug=True)
