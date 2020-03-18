@@ -63,7 +63,7 @@ jobs:
       - task: ShellScript@2
         inputs:
           scriptPath: $(script_path)/resetSlaves.sh
-          args: $(flask_control_port) $(jmeter_server_version) $(server_xms) $(server_xmx) $(jmeter_servers)
+          args: $(flask_control_port) $(jmeter_server_version) $(server_xms) $(server_xmx) $(curl_basic_auth) $(jmeter_servers)
         displayName: 'Reset cluster: $(jmeter_servers)'
 
       - task: Maven@3
@@ -80,7 +80,7 @@ jobs:
       - task: ShellScript@2
         inputs:
           scriptPath: $(script_path)/stopSlaves.sh
-          args: $(flask_control_port) $(jmeter_servers)
+          args: $(flask_control_port) $(curl_basic_auth) $(jmeter_servers)
         displayName: 'Stop cluster: $(jmeter_servers)'
 
       - task: ShellScript@2
