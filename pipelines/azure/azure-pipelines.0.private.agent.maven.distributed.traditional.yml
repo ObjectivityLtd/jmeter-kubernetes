@@ -10,7 +10,7 @@ jobs:
   - job: jmeter_pipeline_maven
     pool: private
     variables:
-      group: secrets
+      - group: secrets
       #jmeter
       report_dir:  $(System.DefaultWorkingDirectory)/jmeter/as_maven/target/jmeter/reports
       artifact_name: jmeter_report
