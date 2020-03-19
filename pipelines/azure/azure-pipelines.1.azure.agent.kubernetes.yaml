@@ -9,7 +9,7 @@ variables:
   cluster_name: jubernetes
   cluster_resource_group: jmeter-group
   cluster_namespace: jmeter
-  kubernetesServiceConnection: sa2
+  kubernetesServiceConnection: sa3
   scale_down_replicas: 0
   scale_up_replicas: 2
   scale_up_replicas_master: 1
@@ -75,7 +75,7 @@ jobs:
     - task: ShellScript@2
       displayName: JMeter tests
       inputs:
-        scriptPath: start_test_from_script.sh
+        scriptPath: kubernetes/bin/start_test_from_script.sh
         args: $(threads) $(report_dir) "-l /results.csv -e"
 
     - task: PublishPipelineArtifact@1
