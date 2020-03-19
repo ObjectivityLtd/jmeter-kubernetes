@@ -14,6 +14,7 @@ variables:
   scale_up_replicas: 2
   scale_up_replicas_master: 1
   service: jmeter-slaves
+  scenario: cloudssky.jmx
   service-master: jmeter-master
   report_dir: reports
   threads: 1
@@ -75,9 +76,8 @@ jobs:
     - task: ShellScript@2
       displayName: JMeter tests
       inputs:
-        scriptPath: kubernetes/bin/start_test_from_script.sh
-        args: $(threads) $(report_dir) "-l /results.csv -e"
-
+        scriptPath: kubernetes/bin/start_test_from_script_params.sh
+        args: $(cluster_namespace) $(scenario)
     - task: PublishPipelineArtifact@1
       displayName: Archive JMeter Report
       inputs:
