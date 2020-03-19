@@ -27,8 +27,8 @@ wait_for_pod() {
   until [ "$service_replicas" == "$service_replicas_number/$service_replicas_number" ]; do
     echo "Wait for service $service to scale to $service_replicas_number for $sleep_time_s seconds"
     sleep $sleep_time_s
-    service_replicas=$($kubectl -n $service_namespace get all | grep pod/$service_name | awk '{print $2}')
-    echo "Service $service_name pod: $service_replicas"
+    service_replicas=$(kubectl -n $service_namespace get all | grep pod/$service | awk '{print $2}')
+    echo "Service $service_name pods ready: $service_replicas"
   done
 }
 
@@ -64,19 +64,22 @@ echo "Process to deploy jmeter kubernetes ?"
 read answer
 echo
 #7 Deploy
-echo "Deploying solution to namespace $cluster_namespace"
+echo "Hit any key to deploy solution to namespace $cluster_namespace"
 cd ../../kubernetes/bin && chmod +x *.sh && ./jmeter_cluster_create.sh "$cluster_namespace"
 #wait for all pods to get deployed
 wait_for_pods jmeter 1 5 influxdb-jmeter jmeter-master jmeter-grafana
 #8 Create dashboards
 echo "Creating grafana dashboards"
-./dashboard.sh
+cd $HOME/jmeter-kubernetes/kubernetes/bin && ./dashboard.sh
 #9 Test
-echo "Test solution by running $test_jmx?"
+echo
+echo "Hit any key to test solution by running $test_jmx from you kubernetes cluster"
 read answer
 echo
-./start_test.sh
+./start_test_from_script_params.sh $cluster_namespace $test_jmx
 #10 Remaining
+
+echo "Congratulations!! It works!"
 echo "Go to https://dev.azure.com/{organization}/{project}/_admin/_services to create a kubernetes service connection"
 echo "You can now process to import Grafana Dashboard at .. automate with Selenium/Python 3.5.2"
 echo "Login toyoru grafana at ...."
