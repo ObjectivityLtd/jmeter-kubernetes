@@ -67,7 +67,7 @@ echo
 echo "Deploying solution to namespace $cluster_namespace"
 cd ../../kubernetes/bin && chmod +x *.sh && ./jmeter_cluster_create.sh "$cluster_namespace"
 #wait for all pods to get deployed
-wait_for_pods jmeter influxdb-jmeter jmeter-master jmeter-grafana
+wait_for_pods jmeter 1 5 influxdb-jmeter jmeter-master jmeter-grafana
 #8 Create dashboards
 echo "Creating grafana dashboards"
 ./dashboard.sh
