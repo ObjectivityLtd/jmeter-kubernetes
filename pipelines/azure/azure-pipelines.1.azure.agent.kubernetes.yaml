@@ -8,7 +8,7 @@ trigger: none
 variables:
   cluster_name: jubernetes
   cluster_resource_group: jmeter-group
-  cluster_namespace: jubernetes2
+  cluster_namespace: jmeter
   kubernetesServiceConnection: sa2
   scale_down_replicas: 0
   scale_up_replicas: 2
