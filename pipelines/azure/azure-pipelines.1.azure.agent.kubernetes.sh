@@ -42,7 +42,7 @@ wait_for_pods(){
     wait_for_pod $service_namespace $service $service_replicas_number $sleep_time_s
   done
 
-}}
+}
 #PART 1 - create a kubernetes cluster in Azure, execute as one command:
 
 #1. Open Azure CLI
@@ -87,4 +87,3 @@ echo "get ARtifactory credentials if you plan to use ARtifactiry step"
 echo "Configure credentials"
 
 #PART 2 - configure a pipelines in your devops organization
-
