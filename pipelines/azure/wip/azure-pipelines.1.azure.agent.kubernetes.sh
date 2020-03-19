@@ -122,13 +122,7 @@ echo
 #10 Remaining
 
 echo "Congratulations!! It works!"
-echo "Go to https://dev.azure.com/{organization}/{project}/_admin/_services to create a kubernetes service connection"
-echo "You can now process to import Grafana Dashboard at .. automate with Selenium/Python 3.5.2"
-echo "Login toyoru grafana at ...."
-echo "Create aks service connection and permision all pipleines to ise"
-#https://stackoverflow.com/questions/52335657/vsts-create-service-connection-via-api
-echo "And create your pipeline in yoru azure devops"
-echo "get ARtifactory credentials if you plan to use ARtifactiry step"
-echo "Configure credentials"
-
-#PART 2 - configure a pipelines in your devops organization
+echo "########################################################################################################"
+echo "Go to https://dev.azure.com/${devops_org}/${devops_project}/_admin/_services to create a kubernetes $devops_service_connection_name service connection"
+echo "Grafana is at: "
+echo "You can now use that pipeline: "

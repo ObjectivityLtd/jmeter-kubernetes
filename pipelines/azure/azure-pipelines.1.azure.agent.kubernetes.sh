@@ -80,21 +80,6 @@ delete_service_connection(){
 
 }
 
-create_service_connection(){
-  echo "Creating connection"
-  cluster_id=$(az aks show --name jubernetes --resource-group jmeter-group | jq '.id')
-  echo "Cluster id $cluster_id"
-  cat template.json | \
-                sed "s/#azureSubscriptionId/dupa/g" |\
-                sed "s/#clusterId/$cluster_id/g" |\
-                sed "s/#namespace/$namespace/g" \
-  > payload.json
-  cat payload.json
-  http_code=$(curl $silent -w "$%{http_code}" --user gstarczewski:$pat -X POST -H "Content-Type: application/json" -d @payload.json https://dev.azure.com/gstarczewski/jmeter/_apis/serviceendpoint/endpoints?api-version=5.0-preview.2)
-  echo "Http code: $http_code"
-}
-#PART 1 - create a kubernetes cluster in Azure, execute as one command:
-
 #1. Delete service connection if exists
 echo "Deleting k8 service connection $devops_service_connection_name if exists"
 delete_service_connection $devops_org $devops_project $devops_user calzm6eokgoy7m3m54ikqkocdzqfxskaw6o2h3al34wgj4jngoxa $devops_service_connection_name
@@ -132,13 +117,7 @@ echo
 #10 Remaining
 
 echo "Congratulations!! It works!"
-echo "Go to https://dev.azure.com/{organization}/{project}/_admin/_services to create a kubernetes service connection"
-echo "You can now process to import Grafana Dashboard at .. automate with Selenium/Python 3.5.2"
-echo "Login toyoru grafana at ...."
-echo "Create aks service connection and permision all pipleines to ise"
-#https://stackoverflow.com/questions/52335657/vsts-create-service-connection-via-api
-echo "And create your pipeline in yoru azure devops"
-echo "get ARtifactory credentials if you plan to use ARtifactiry step"
-echo "Configure credentials"
-
-#PART 2 - configure a pipelines in your devops organization
+echo "########################################################################################################"
+echo "Go to https://dev.azure.com/${devops_org}/${devops_project}/_admin/_services to create a kubernetes $devops_service_connection_name service connection"
+echo "Grafana is at: "
+echo "You can now use that pipeline: "
