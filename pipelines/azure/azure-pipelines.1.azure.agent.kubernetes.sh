@@ -11,7 +11,7 @@ cluster_name=jubernetes
 cluster_namespace=jmeter
 kubernetes_version=1.15.10
 node_size=Standard_D2_v2
-node_count=5
+node_count=3
 home_dir=$(pwd)
 test_jmx="cloudssky.jmx"
 

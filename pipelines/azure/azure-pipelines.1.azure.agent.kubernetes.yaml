@@ -9,7 +9,7 @@ variables:
   cluster_name: jubernetes
   cluster_resource_group: jmeter-group
   cluster_namespace: jubernetes2
-  kubernetesServiceConnection: pupa2
+  kubernetesServiceConnection: sa2
   scale_down_replicas: 0
   scale_up_replicas: 2
   scale_up_replicas_master: 1
