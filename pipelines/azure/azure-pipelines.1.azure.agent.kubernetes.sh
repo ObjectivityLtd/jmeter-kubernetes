@@ -2,6 +2,9 @@
 #How to prepare all necessary azure resources to keep cost under control ?
 #Note: all of this can also be done in UI, howver for automartion I am presenting a CLI version.
 #edit this file, commit, in your devops org create PAT and make it available as env variable $pat
+#vi .bash_profile
+#export pat=...
+#source .bash_profile
 #execute this in CLI:
 #cd ~ && rm -Rf jmeter-kubernetes && git clone https://github.com/ObjectivityLtd/jmeter-kubernetes && cd jmeter-kubernetes/pipelines/azure && chmod +x *.sh && ./azure-pipelines.1.azure.agent.kubernetes.sh
 
@@ -82,7 +85,7 @@ delete_service_connection(){
 
 #1. Delete service connection if exists
 echo "Deleting k8 service connection $devops_service_connection_name if exists"
-delete_service_connection $devops_org $devops_project $devops_user calzm6eokgoy7m3m54ikqkocdzqfxskaw6o2h3al34wgj4jngoxa $devops_service_connection_name
+delete_service_connection $devops_org $devops_project $devops_user $pat $devops_service_connection_name
 #2. Delete entire resource group if exist:
 echo "Deleting group $group_name if exists"
 az group delete -n "$group_name" --yes || :
