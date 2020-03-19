@@ -16,7 +16,7 @@ variables:
   service: jmeter-slaves
   scenario: cloudssky.jmx
   service-master: jmeter-master
-  report_dir: reports
+  report_dir: report
   threads: 1
 
 jobs:
