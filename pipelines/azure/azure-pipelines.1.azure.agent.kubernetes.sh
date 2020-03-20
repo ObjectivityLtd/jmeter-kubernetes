@@ -2,10 +2,19 @@
 #edit CONFIG part of this file in your repo, commit. You will need PAT from your devop org. Makeit available as ENV variable $pat
 #echo "export pat=your_devops_org_pat" > .bash_profile && source .bash_profile
 #execute this in Azure CLI:
-#cd ~ && rm -Rf jmeter-kubernetes && git clone https://github.com/ObjectivityLtd/jmeter-kubernetes && cd jmeter-kubernetes/pipelines/azure && chmod +x *.sh && ./azure-pipelines.1.azure.agent.kubernetes.sh
+#cd ~ && rm -Rf jmeter-kubernetes && git clone https://github.com/ObjectivityLtd/jmeter-kubernetes && cd jmeter-kubernetes/pipelines/azure && chmod +x *.sh && ./azure-pipelines.1.azure.agent.kubernetes.sh jmeter-group2
 
 #CONFIG START
-group_name=jmeter-group
+group_name=
+if [ -z "$group_name" ]; then
+  echo "Group name not set in script. Trying to fetch from commandline."
+  if [ -z "$1" ]; then
+      echo "Group name not provided on commandline. Setting to default: jmeter-group"
+      group_name=jmeter-group
+  else
+    group_name=$1
+  fi
+fi
 location=uksouth #use location close to your app
 cluster_name=jubernetes
 cluster_namespace=jmeter
@@ -27,7 +36,7 @@ if [ -z "$pat" ]; then
     echo "You need to provide your PAT before running this script."
     echo  "Run: echo "export pat=your_devops_org_pat" > .bash_profile && source .bash_profile"
     return
-  fi
+fi
 #1. Delete service connection if exists
 echo "Deleting k8 service connection $devops_service_connection_name if exists"
 #source bin/delete_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name
