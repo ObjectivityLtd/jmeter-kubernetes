@@ -18,4 +18,4 @@ template="
   \"owner\": \"Library\"
 }
 "
-echo  $template
+printf  "$template"
