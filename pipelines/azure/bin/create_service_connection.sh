@@ -17,14 +17,11 @@ create_service_connection() {
   fi
   url=https://$url
   printf "For cluster: \n\t cluster_name: $cluster_name \n\t url: $url"
-  cat $HOME/jmeter-kubernetes/pipelines/azure/bin/template.json | \
-  sed "s+#kube_config+$(cat ~/.kube/config)+g" | \
-  sed "s+#cluster_context+$cluster_name+g" | \
-  sed "s+#url+$url+g" | \
-  sed "s/#name/$name/g" \
-  >$HOME/jmeter-kubernetes/pipelines/azure/bin/payload.json
+  local path=$HOME/jmeter-kubernetes/pipelines/azure/bin
+  source $path/template.json.sh $name $url $cluster_name > $path/payload.json
+  echo "Sending payload"
   cat payload.json
-  http_code=$(curl -w "$%{http_code}" --user $user:$pat -X POST -H "Content-Type: application/json" -d @$HOME/jmeter-kubernetes/pipelines/azure/bin/payload.json https://dev.azure.com/$org/$project/_apis/serviceendpoint/endpoints?api-version=5.0-preview.2)
+  http_code=$(curl -w "$%{http_code}" --user $user:$pat -X POST -H "Content-Type: application/json" -d @$path/payload.json https://dev.azure.com/$org/$project/_apis/serviceendpoint/endpoints?api-version=5.0-preview.2)
   echo "Http code: $http_code"
   if [ "$http_code" != "200" ]; then
     echo "Connection $name was not created"
