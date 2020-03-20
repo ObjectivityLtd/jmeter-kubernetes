@@ -5,7 +5,7 @@
 #cd ~ && rm -Rf jmeter-kubernetes && git clone https://github.com/ObjectivityLtd/jmeter-kubernetes && cd jmeter-kubernetes/pipelines/azure && chmod +x *.sh && ./azure-pipelines.1.azure.agent.kubernetes.sh
 
 #CONFIG START
-group_name=jmeter-group2
+group_name=jmeter-group3
 location=uksouth #use location close to your app
 cluster_name=jubernetes
 cluster_namespace=jmeter
