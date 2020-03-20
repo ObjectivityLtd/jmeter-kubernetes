@@ -36,7 +36,7 @@ t="\n###########################################################################
 if [ -z "$pat" ]; then
     echo "You need to provide your PAT before running this script."
     echo  "Run: echo "export pat=your_devops_org_pat" > .bash_profile && source .bash_profile"
-    return
+    exit 1
 fi
 echo "Creating service connection"
 source bin/create_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name $cluster_name $group_name
