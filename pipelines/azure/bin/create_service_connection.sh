@@ -18,7 +18,7 @@ create_service_connection() {
   url=https://$url
   printf "For cluster: \n\t cluster_name: $cluster_name \n\t url: $url"
   local path=$HOME/jmeter-kubernetes/pipelines/azure/bin
-  source $path/template.json.sh $name $url $cluster_name > $path/payload.json
+  source $path/template.json.sh $name $url $cluster_name $resource_group> $path/payload.json
   echo "Sending payload"
   cat $path/payload.json
   http_code=$(curl -w "$%{http_code}" --user $user:$pat -X POST -H "Content-Type: application/json" -d @$path/payload.json https://dev.azure.com/$org/$project/_apis/serviceendpoint/endpoints?api-version=5.0-preview.2)

@@ -10,7 +10,7 @@ template="
   \"authorization\": {
     \"parameters\": {
       \"clusterContext\": \"$3\",
-      \"kubeConfig\": \"$(cat ~/.kube/config)\"},
+      \"kubeConfig\": \"$(az aks get-credentials --name $3 --resource-group $4 -f -)\"},
     \"scheme\": \"Kubernetes\"
   },
   \"isShared\": false,
