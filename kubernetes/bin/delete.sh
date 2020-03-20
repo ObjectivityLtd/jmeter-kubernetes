@@ -1,3 +1,3 @@
 #!/bin/sh
 
-az group delete -n jmeter-group --yes --no-wait
+az group delete -n jmeter-group2 --yes --no-wait
