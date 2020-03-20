@@ -31,15 +31,17 @@ devops_service_connection_name=k8c #is used in example pipeline
 devops_user=gstarczewski
 #CONFIG END
 t="\n########################################################################################################\n"
-echo "Creating service connection"
-source bin/create_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name $cluster_name $group_name
-exit
+
 #checking PAT exists
 if [ -z "$pat" ]; then
     echo "You need to provide your PAT before running this script."
     echo  "Run: echo "export pat=your_devops_org_pat" > .bash_profile && source .bash_profile"
     return
 fi
+echo "Creating service connection"
+source bin/create_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name $cluster_name $group_name
+exit
+
 #1. Delete service connection if exists
 echo "Deleting k8 service connection $devops_service_connection_name if exists"
 source bin/delete_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name
