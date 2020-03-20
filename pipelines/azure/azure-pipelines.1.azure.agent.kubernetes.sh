@@ -52,7 +52,8 @@ echo "Creating service connection"
 source bin/create_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name $cluster_name $group_name
 
 #6 Ask if we continue
-echo "Process to deploy jmeter kubernetes ?"
+printf "$t"
+echo "Cluster is created. Process to deploy jmeter kubernetes ?"
 read answer
 echo
 
@@ -67,16 +68,19 @@ echo "Creating grafana dashboards"
 cd $HOME/jmeter-kubernetes/kubernetes/bin && ./dashboard.sh
 
 #9 Test
-echo
-echo "Hit any key to test solution by running $test_jmx from you kubernetes cluster"
+printf "$t"
+echo "Solution is deployed and scaled. Hit any key to test solution by running $test_jmx from you kubernetes cluster"
 read answer
 
 echo
 ./start_test_from_script_params.sh $cluster_namespace $test_jmx
 #10 Remaining
 
+t="\n########################################################################################################\n"
+printf "$t"
 echo "Congratulations!! It works!"
-echo "########################################################################################################"
-echo "Go to https://dev.azure.com/${devops_org}/${devops_project}/_admin/_services "
-echo "Grafana is at: "
-echo "You can now use the pipeline: jmeter-kubernetes/pipelines/azure/azure-pipelines.1.azure.agent.kubernetes.yaml for starters "
+printf "$t"
+printf "\t1. Go to https://dev.azure.com/${devops_org}/${devops_project}/_admin/_services to configure pipeline"
+printf "\t2  Use this pipeline for start: jmeter-kubernetes/pipelines/azure/azure-pipelines.1.azure.agent.kubernetes.yaml"
+printf "\t3  You service connection is $devops_service_connection_name"
+echo   "\t4  Grafana is at: http://$(kubectl -n $service_namespace get all | grep service/jmeter-grafana | awk '{print $2}')"
