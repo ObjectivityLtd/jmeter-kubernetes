@@ -30,7 +30,7 @@ if [ -z "$pat" ]; then
   fi
 #1. Delete service connection if exists
 echo "Deleting k8 service connection $devops_service_connection_name if exists"
-source ../bin/delete_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name
+source bin/delete_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name
 
 #2. Delete entire resource group if exist:
 echo "Deleting group $group_name if exists"
@@ -49,7 +49,7 @@ echo "Listing your cluster nodes"
 az aks get-credentials --resource-group "$group_name" --name "$cluster_name" --overwrite-existing
 kubectl get nodes
 echo "Creating service connection"
-source ../bin/create_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name $cluster_name $group_name
+source bin/create_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name $cluster_name $group_name
 
 #6 Ask if we continue
 echo "Process to deploy jmeter kubernetes ?"
@@ -60,7 +60,7 @@ echo
 echo "Hit any key to deploy solution to namespace $cluster_namespace"
 cd ../../kubernetes/bin && chmod +x *.sh && ./jmeter_cluster_create.sh "$cluster_namespace"
 #wait for all pods to get deployed
-source ../bin/wait_for_pods.sh jmeter 1 5 influxdb-jmeter jmeter-master jmeter-grafana
+source bin/wait_for_pods.sh jmeter 1 5 influxdb-jmeter jmeter-master jmeter-grafana
 
 #8 Create dashboards
 echo "Creating grafana dashboards"
