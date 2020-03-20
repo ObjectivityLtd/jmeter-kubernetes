@@ -35,5 +35,4 @@ kubectl exec -ti -n $tenant $master_pod -- rm -Rf "$tmp"
 kubectl exec -ti -n $tenant $master_pod -- mkdir -p "$tmp/$report_dir"
 kubectl exec -ti -n $tenant $master_pod -- /bin/bash /load_test "$test_name -l $tmp/results.csv -e -Gthreads=$threads $jmeter_args -o $tmp/$report_dir"
 kubectl cp "$tenant/$master_pod:$tmp/$report_dir" "$local_report_dir"
-ls -alh
-pwd
+
