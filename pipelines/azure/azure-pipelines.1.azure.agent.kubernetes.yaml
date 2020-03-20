@@ -3,8 +3,6 @@ name: $(BuildID)
 trigger: none
 #config
 variables:
-  cluster_name: jubernetes
-  cluster_resource_group: jmeter-group5
   cluster_namespace: jmeter
   kubernetesServiceConnection: k8c
   scale_down_replicas: 0
