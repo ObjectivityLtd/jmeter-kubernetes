@@ -9,7 +9,7 @@ delete_service_connection() {
   verbose=" -v"
   opts="$silent"
 
-  service_connection_id=$(curl --user $user:$pat https://dev.azure.com/$org/project/_apis/serviceendpoint/endpoints?endpointNames=${service_connection_name} | jq '.value[0].id' | sed "s/\"//g")
+  service_connection_id=$(curl --user $user:$pat https://dev.azure.com/$org/$project/_apis/serviceendpoint/endpoints?endpointNames=${service_connection_name} | jq '.value[0].id' | sed "s/\"//g")
   if [ -z "$service_connection_id" ]; then
     echo "Cannot get $service_connection_name id. skipping connection deletion as it does not exist."
     return
