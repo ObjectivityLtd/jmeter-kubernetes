@@ -17,7 +17,7 @@ create_service_connection() {
   fi
   url=https://$url
   printf "For cluster: \n\t cluster_name: $cluster_name \n\t url: $url"
-  cat template.json | \
+  cat $HOME/jmeter-kubernetes/pipelines/azure/bin/template.json | \
   sed "s+#kube_config+$(cat ~/.kube/config)+g" | \
   sed "s+#cluster_context+$cluster_name+g" | \
   sed "s+#url+$url+g" | \
