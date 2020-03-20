@@ -9,7 +9,7 @@
 #cd ~ && rm -Rf jmeter-kubernetes && git clone https://github.com/ObjectivityLtd/jmeter-kubernetes && cd jmeter-kubernetes/pipelines/azure && chmod +x *.sh && ./azure-pipelines.1.azure.agent.kubernetes.sh
 
 #config cluster
-group_name=jmeter-group
+group_name=jmeter-group2
 location=uksouth
 cluster_name=jubernetes
 cluster_namespace=jmeter
