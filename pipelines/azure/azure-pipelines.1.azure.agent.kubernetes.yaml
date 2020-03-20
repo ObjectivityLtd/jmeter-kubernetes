@@ -9,7 +9,7 @@ variables:
   cluster_name: jubernetes
   cluster_resource_group: jmeter-group
   cluster_namespace: jmeter
-  kubernetesServiceConnection: 1000125
+  kubernetesServiceConnection: k8c
   scale_down_replicas: 0
   scale_up_replicas: 2
   scale_up_replicas_master: 1
