@@ -30,7 +30,7 @@ devops_project=jmeter
 devops_service_connection_name=k8c #is used in example pipeline
 devops_user=gstarczewski
 #CONFIG END
-
+t="\n########################################################################################################\n"
 #checking PAT exists
 if [ -z "$pat" ]; then
     echo "You need to provide your PAT before running this script."
@@ -85,7 +85,6 @@ echo
 ./start_test_from_script_params.sh $cluster_namespace $test_jmx
 #10 Remaining
 
-t="\n########################################################################################################\n"
 printf "$t"
 echo "Congratulations!! It works!"
 printf "$t"
