@@ -61,7 +61,7 @@ jobs:
         namespace: $(cluster_namespace)
 
     - task: Kubernetes@1
-      displayName: Login to cluster $(cluster_name)
+      displayName: Login to cluster
       inputs:
         command: login
         connectionType: Kubernetes Service Connection
