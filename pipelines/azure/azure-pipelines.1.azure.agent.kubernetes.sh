@@ -88,7 +88,7 @@ echo
 printf "$t"
 echo "Congratulations!! It works!"
 printf "$t"
-printf "\t1. Go to https://dev.azure.com/${devops_org}/${devops_project}/_admin/_services to configure pipeline"
-printf "\t2  Use this pipeline for start: jmeter-kubernetes/pipelines/azure/azure-pipelines.1.azure.agent.kubernetes.yaml"
-printf "\t3  You service connection is $devops_service_connection_name"
-echo   "\t4  Grafana is at: http://$(kubectl -n $service_namespace get all | grep service/jmeter-grafana | awk '{print $2}')"
+printf "\n\t1. Go to https://dev.azure.com/${devops_org}/${devops_project}/_admin/_services to configure pipeline"
+printf "\n\t2  Use this pipeline for start: jmeter-kubernetes/pipelines/azure/azure-pipelines.1.azure.agent.kubernetes.yaml"
+printf "\n\t3  You service connection is $devops_service_connection_name"
+printf  "\n\t4  Grafana is at: http://" && echo $(kubectl -n $service_namespace get all | grep service/jmeter-grafana | awk '{print $2}')
