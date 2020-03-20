@@ -31,6 +31,9 @@ devops_service_connection_name=k8c #is used in example pipeline
 devops_user=gstarczewski
 #CONFIG END
 t="\n########################################################################################################\n"
+echo "Creating service connection"
+source bin/create_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name $cluster_name $group_name
+exit
 #checking PAT exists
 if [ -z "$pat" ]; then
     echo "You need to provide your PAT before running this script."
