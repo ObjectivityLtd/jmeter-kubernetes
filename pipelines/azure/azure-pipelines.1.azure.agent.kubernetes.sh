@@ -39,23 +39,23 @@ if [ -z "$pat" ]; then
 fi
 #1. Delete service connection if exists
 echo "Deleting k8 service connection $devops_service_connection_name if exists"
-#source bin/delete_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name
+source bin/delete_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name
 
 #2. Delete entire resource group if exist:
 echo "Deleting group $group_name if exists"
-#az group delete -n "$group_name" --yes || :
+az group delete -n "$group_name" --yes || :
 
 #3. Create resource group in desired location (it might take a while), use: az account list-locations to list locations
 echo "Creating group $group_name in location $location"
-#az group create -l "$location" -n "$group_name"
+az group create -l "$location" -n "$group_name"
 
 #4. Create aks cluster
 echo "Creating cluster $group_name/$cluster_name with k8 $kubernetes_version and $node_count nodes of size $node_size"
-#az aks create --resource-group "$group_name" --name "$cluster_name" --kubernetes-version "$kubernetes_version" --node-vm-size "$node_size" --node-count "$node_count" --enable-addons monitoring --generate-ssh-keys
+az aks create --resource-group "$group_name" --name "$cluster_name" --kubernetes-version "$kubernetes_version" --node-vm-size "$node_size" --node-count "$node_count" --enable-addons monitoring --generate-ssh-keys
 
 #5 Display nodes
 echo "Listing your cluster nodes"
-#az aks get-credentials --resource-group "$group_name" --name "$cluster_name" --overwrite-existing
+az aks get-credentials --resource-group "$group_name" --name "$cluster_name" --overwrite-existing
 kubectl get nodes
 echo "Creating service connection"
 source bin/create_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name $cluster_name $group_name
