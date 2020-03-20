@@ -32,3 +32,4 @@ create_service_connection() {
     echo "Connection $name was created. "
   fi
 }
+create_service_connection $@

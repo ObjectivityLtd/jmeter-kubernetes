@@ -5,7 +5,7 @@
 #cd ~ && rm -Rf jmeter-kubernetes && git clone https://github.com/ObjectivityLtd/jmeter-kubernetes && cd jmeter-kubernetes/pipelines/azure && chmod +x *.sh && ./azure-pipelines.1.azure.agent.kubernetes.sh
 
 #CONFIG START
-group_name=jmeter-group4
+group_name=jmeter-group
 location=uksouth #use location close to your app
 cluster_name=jubernetes
 cluster_namespace=jmeter
@@ -58,9 +58,9 @@ echo
 
 #7 Deploy
 echo "Hit any key to deploy solution to namespace $cluster_namespace"
-cd ../../kubernetes/bin && chmod +x *.sh && ./jmeter_cluster_create.sh "$cluster_namespace"
+cd $HOME/jmeter-kubernetes/kubernetes/bin && chmod +x *.sh && ./jmeter_cluster_create.sh "$cluster_namespace"
 #wait for all pods to get deployed
-source bin/wait_for_pods.sh jmeter 1 5 influxdb-jmeter jmeter-master jmeter-grafana
+cd $HOME/jmeter-kubernetes/pipelines/azure && source bin/wait_for_pods.sh jmeter 1 5 influxdb-jmeter jmeter-master jmeter-grafana
 
 #8 Create dashboards
 echo "Creating grafana dashboards"
