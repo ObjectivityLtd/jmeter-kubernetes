@@ -38,14 +38,14 @@ if [ -z "$pat" ]; then
     echo  "Run: echo "export pat=your_devops_org_pat" > .bash_profile && source .bash_profile"
     exit 1
 fi
-echo "Creating service connection"
-source bin/create_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name $cluster_name $group_name
-exit
+
 
 #1. Delete service connection if exists
 echo "Deleting k8 service connection $devops_service_connection_name if exists"
 source bin/delete_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name
-
+echo "Creating service connection"
+source bin/create_service_connection.sh $devops_org $devops_project $devops_user $pat $devops_service_connection_name $cluster_name $group_name
+exit
 #2. Delete entire resource group if exist:
 echo "Deleting group $group_name if exists"
 az group delete -n "$group_name" --yes || :
