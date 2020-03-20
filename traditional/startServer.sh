@@ -11,7 +11,7 @@ restart_jmeter_server() {
   heap_filter=$(echo $heap | sed "s/-/\\\-/g")
   pid=""
   until [ "$pid" != "" ]; do
-         pid=$(ps -au | grep java | grep ApacheJMeter.jar | grep "$heap_filter" | awk '{print $2}')
+         pid=$(ps -aux | grep java | grep ApacheJMeter.jar | grep "$heap_filter" | awk '{print $2}')
          sleep 3
          echo "pid: $pid, waiting for new pid"
   done
