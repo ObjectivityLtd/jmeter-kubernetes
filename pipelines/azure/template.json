@@ -1,0 +1,17 @@
+{
+  "data": {
+    "authorizationType": "Kubeconfig"
+  },
+  "name": "#name",
+  "type": "kubernetes",
+  "url": "#url",
+  "authorization": {
+    "parameters": {
+      "clusterContext": "#cluster_context",
+      "kubeConfig": "#kube_config"},
+    "scheme": "Kubernetes"
+  },
+  "isShared": false,
+  "isReady": true,
+  "owner": "Library"
+}

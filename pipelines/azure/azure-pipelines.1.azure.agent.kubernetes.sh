@@ -43,19 +43,19 @@ wait_for_pod() {
   done
 }
 
-wait_for_pods(){
+wait_for_pods() {
   local service_namespace=$1
   local service_replicas_number=$2
   local sleep_time_s=$3
   shift 3
-  IFS=' ' read -r -a services <<< "$@"
+  IFS=' ' read -r -a services <<<"$@"
   for service in "${services[@]}"; do
     wait_for_pod $service_namespace $service $service_replicas_number $sleep_time_s
   done
 
 }
 
-delete_service_connection(){
+delete_service_connection() {
   local org=$1
   local project=$2
   local user=$3
@@ -65,24 +65,23 @@ delete_service_connection(){
   verbose=" -v"
   opts="$silent"
 
-  service_connection_id=$(curl --user $user:$pat https://dev.azure.com/$org/project/_apis/serviceendpoint/endpoints?endpointNames=${service_connection_name} | jq '.value[0].id' | sed "s/\"//g" )
- echo "id: $service_connection_id"
- if [ -z "$service_connection_id" ]; then
-        echo "Cannot get id. skipping connection deletion"
-        return
- fi
+  service_connection_id=$(curl --user $user:$pat https://dev.azure.com/$org/project/_apis/serviceendpoint/endpoints?endpointNames=${service_connection_name} | jq '.value[0].id' | sed "s/\"//g")
+  if [ -z "$service_connection_id" ]; then
+    echo "Cannot get $service_connection_name id. skipping connection deletion as it does not exist."
+    return
+  fi
 
- http_code=$(curl $opts -w "%{http_code}"  --user $user:$pat -X DELETE https://dev.azure.com/$org/$project/_apis/serviceendpoint/endpoints/${service_connection_id}?api-version=5.1-preview.2)
+  http_code=$(curl $opts -w "%{http_code}" --user $user:$pat -X DELETE https://dev.azure.com/$org/$project/_apis/serviceendpoint/endpoints/${service_connection_id}?api-version=5.1-preview.2)
 
   echo "Http code: $http_code"
   if [ "$http_code" != "204" ]; then
-      echo "Connection $service_connection_name by id $service_connection_id was not deleted."
+    echo "Connection $service_connection_name by id $service_connection_id was not deleted."
   else
-      echo "Connection $service_connection_name was deleted. "
+    echo "Connection $service_connection_name was deleted. "
   fi
 
 }
-create_service_connection(){
+create_service_connection() {
   local org=$1
   local project=$2
   local user=$3
@@ -93,25 +92,25 @@ create_service_connection(){
   local cluster_name=$6
   local resource_group=$7
 
-  url=$(az aks show --name $cluster_name  --resource-group $resource_group | jq '.fqdn' | sed "s/\"//g") ||:
+  url=$(az aks show --name $cluster_name --resource-group $resource_group | jq '.fqdn' | sed "s/\"//g") || :
   if [ -z "$url" ]; then
-        echo "Cannot get cluster name. Is it created? Skipping connection creation."
-        return
+    echo "Cannot get cluster name. Is it created? Skipping connection creation."
+    return
   fi
   url=https://$url
   printf "For cluster: \n\t cluster_name: $cluster_name \n\t url: $url"
   cat template.json | \
-                sed "s+#kube_config+$(cat ~/.kube/config)+g" |\
-                sed "s+#cluster_context+$cluster_name+g" |\
-                sed "s+#url+$url+g" |\
-                sed "s/#name/$name/g" \
-  > payload.json
-  cat payload.json  http_code=$(curl -w "$%{http_code}" --user $user:$pat -X POST -H "Content-Type: application/json" -d @payload.json https://dev.azure.com/$org/$project/_apis/serviceendpoint/endpoints?api-version=5.0-preview.2)
+  sed "s+#kube_config+$(cat ~/.kube/config)+g" | \
+  sed "s+#cluster_context+$cluster_name+g" | \
+  sed "s+#url+$url+g" | \
+  sed "s/#name/$name/g" \
+  >payload.json
+  cat payload.json http_code=$(curl -w "$%{http_code}" --user $user:$pat -X POST -H "Content-Type: application/json" -d @payload.json https://dev.azure.com/$org/$project/_apis/serviceendpoint/endpoints?api-version=5.0-preview.2)
   echo "Http code: $http_code"
   if [ "$http_code" != "200" ]; then
-      echo "Connection $name was not created"
+    echo "Connection $name was not created"
   else
-      echo "Connection $name was created. "
+    echo "Connection $name was created. "
   fi
 }
 #1. Delete service connection if exists
