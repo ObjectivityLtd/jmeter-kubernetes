@@ -11,22 +11,22 @@ pipelines/
 
 
 jmeter/
- as_jmx - contains plain jmx scenario
- as_maven - contains jmeter tests as maven projects
+ - as_jmx - contains plain jmx scenario
+ - as_maven - contains jmeter tests as maven projects
 
 agent/
- contains Dockerfile for private build agent and run instructions
+ - contains Dockerfile for private build agent and run instructions
 
 artifactory/
- start script for Artifactory that can store reports as artifacts, that is used in private k8 deployment
+ - start script for Artifactory that can store reports as artifacts, that is used in private k8 deployment
 
 kubernetes/
- bin - contains bash shell scripts for running various k8 and azure pipeline commands
- config - contains original Dockerfles and k8 config maps and deployment files
- tmp - temp dir
+ - bin - contains bash shell scripts for running various k8 and azure pipeline commands
+ - config - contains original Dockerfles and k8 config maps and deployment files
+ - tmp - temp dir
 
 traditional/
-  contains scripts to set up traditional JMeter cluster and control it via REST calls with flask end points
+  - contains scripts to set up traditional JMeter cluster and control it via REST calls with flask end points
 
 
 
