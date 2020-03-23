@@ -4,10 +4,10 @@
 This repo contains 4 examples of running tests in Azure Cloud.
 
 pipelines/
- azure-pipelines.0.private.agent.kubernetes.yml - pipelines run against private agent using private k8 cluster
- azure-pipelines.0.private.agent.maven.distributed.traditional.yml - pipelines run against private agent using traditional JMeter grid deployment, with maven
- azure-pipelines.0.private.agent.maven.yml - pipeline run against private agent, no distributed tests,  with maven
- azure-pipelines.1.azure.agent.kubernetes.yaml - run against azure build agent against azure aks k8 cluster deployment
+ - azure-pipelines.0.private.agent.kubernetes.yml - pipelines run against private agent using private k8 cluster
+ - azure-pipelines.0.private.agent.maven.distributed.traditional.yml - pipelines run against private agent using traditional JMeter grid deployment, with maven
+ - azure-pipelines.0.private.agent.maven.yml - pipeline run against private agent, no distributed tests,  with maven
+ - azure-pipelines.1.azure.agent.kubernetes.yaml - run against azure build agent against azure aks k8 cluster deployment
 
 
 jmeter/
