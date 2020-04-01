@@ -19,7 +19,11 @@ RUN apt-get update \
         libcurl3 \
         libicu55 \
         libunwind8 \
-        netcat
+        netcat \
+        python3.5 \
+        python3-pip
+
+RUN pip3 install --upgrade pip
 
 #Install higher maven version, jmeter plugin requires 3.5.0
 RUN curl -o maven.tar.gz https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz && \
