@@ -60,7 +60,7 @@ k8 1.17 and higher
 For Azure (CLI), edit azure-pipelines.1.azure.agent.kubernetes.sh and fill in details, then run:
 ```
 echo "export pat=your_devops_org_PAT" > .bash_profile
-source .bash_profile && cd ~ && rm -Rf jmeter-kubernetes && git clone https://github.com/ObjectivityLtd/jmeter-kubernetes && cd jmeter-kubernetes/pipelines/azure && chmod +x *.sh && ./azure-pipelines.1.azure.agent.kubernetes.sh jmeter-group
+cd ~ && source .bash_profile && rm -Rf jmeter-kubernetes && git clone https://github.com/ObjectivityLtd/jmeter-kubernetes && cd jmeter-kubernetes/pipelines/azure && chmod +x *.sh && ./azure-pipelines.1.azure.agent.kubernetes.sh jmeter-group
 ```
 
 
