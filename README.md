@@ -65,5 +65,6 @@ echo "export pat=your_devops_org_PAT" > .bash_profile
 cd ~ && source .bash_profile && rm -Rf jmeter-kubernetes && git clone https://github.com/ObjectivityLtd/jmeter-kubernetes && cd jmeter-kubernetes/pipelines/azure && chmod +x *.sh && ./azure-pipelines.1.azure.agent.kubernetes.sh jmeter-group
 ```
 
+Visit this project Wiki for detailed description of each pipeline and use-case.
 Visit: https://medium.com/@gabriel.starczewski/jmeter-and-azure-pipelines-55f0594239ac to understand how to run Jmeter tests on Azure without Kubernetes cluster.
 
