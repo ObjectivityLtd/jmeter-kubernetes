@@ -39,6 +39,8 @@ Kubernetes architectures were tested on k8 1.15.1 (Azure) and 1.17 (private clus
 
 ## How to set-up Kubernetes clusters ?
 
+For pipelines that require Kubernetes service you need to create one first either via Azure AKS or locally. Once you have cluster up and running ..
+
 ### For private deployments run
 
 k8 1.16 and below
