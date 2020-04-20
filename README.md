@@ -1,7 +1,7 @@
-# Jmeter Cluster Support for Kubernetes
-# Jmeter Azure pipeline examples
+# Azure JMeter Architectures & approaches
+# Jmeter Azure pipelines examples
 
-This repo contains 4 examples of running tests in Azure Cloud.
+This repo contains 4 examples of pipelines that execute performance tests in Azure Cloud.
 
 pipelines/
  - azure-pipelines.0.private.agent.kubernetes.yml - pipelines run against private agent using private k8 cluster
@@ -21,25 +21,27 @@ artifactory/
  - start script for Artifactory that can store reports as artifacts, that is used in private k8 deployment
 
 kubernetes/
- - bin - contains bash shell scripts for running various k8 and azure pipeline commands
+ - bin - contains bash shell scripts for running various k8 and azure pipeline automation tasks
  - config - contains original Dockerfles and k8 config maps and deployment files
  - tmp - temp dir
 
 traditional/
-  - contains scripts to set up traditional JMeter cluster and control it via REST calls with flask end points
+  - contains scripts to set up traditional JMeter cluster and control it via REST calls with flask end-points
 
 
 
-## Prerequisits
+## Prerequisites
 
 Kubernetes > 1.8
 
 
-This solution was tested on k8 1.15.1 (Azure) and 1.17 (private cluster)
+Kubernetes architectures were tested on k8 1.15.1 (Azure) and 1.17 (private cluster)
 
-##
+## How to set-up Kubernetes clusters ?
 
-### For private deployments
+For pipelines that require Kubernetes service you need to create one first either via Azure AKS or locally. Once you have cluster up and running ..
+
+### For private deployments run
 
 k8 1.16 and below
 ```bash
@@ -57,10 +59,12 @@ k8 1.17 and higher
 ./start_test.sh
 ```
 
-For Azure (CLI), edit azure-pipelines.1.azure.agent.kubernetes.sh and fill in details, then run:
+For Azure deployments from AKS service (CLI), edit azure-pipelines.1.azure.agent.kubernetes.sh and fill in details, then run:
 ```
-echo "export pat=your_devops_org_PAT" > .bash_profile && source .bash_profile
-cd ~ && rm -Rf jmeter-kubernetes && git clone https://github.com/ObjectivityLtd/jmeter-kubernetes && cd jmeter-kubernetes/pipelines/azure && chmod +x *.sh && ./azure-pipelines.1.azure.agent.kubernetes.sh jmeter-group
+echo "export pat=your_devops_org_PAT" > .bash_profile
+cd ~ && source .bash_profile && rm -Rf jmeter-kubernetes && git clone https://github.com/ObjectivityLtd/jmeter-kubernetes && cd jmeter-kubernetes/pipelines/azure && chmod +x *.sh && ./azure-pipelines.1.azure.agent.kubernetes.sh jmeter-group
 ```
 
+- Visit this project Wiki for detailed description of each pipeline and use-case.
+- Visit: https://medium.com/@gabriel.starczewski/jmeter-and-azure-pipelines-55f0594239ac to understand how to run Jmeter tests on Azure without Kubernetes cluster.
 
