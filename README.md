@@ -1,7 +1,7 @@
-# Jmeter Cluster Support for Kubernetes
-# Jmeter Azure pipeline examples
+# Azure JMeter Architectures & approaches
+# Jmeter Azure pipelines examples
 
-This repo contains 4 examples of running tests in Azure Cloud.
+This repo contains 4 examples of pipelines that execute performance tests in Azure Cloud.
 
 pipelines/
  - azure-pipelines.0.private.agent.kubernetes.yml - pipelines run against private agent using private k8 cluster
@@ -21,25 +21,25 @@ artifactory/
  - start script for Artifactory that can store reports as artifacts, that is used in private k8 deployment
 
 kubernetes/
- - bin - contains bash shell scripts for running various k8 and azure pipeline commands
+ - bin - contains bash shell scripts for running various k8 and azure pipeline automation tasks
  - config - contains original Dockerfles and k8 config maps and deployment files
  - tmp - temp dir
 
 traditional/
-  - contains scripts to set up traditional JMeter cluster and control it via REST calls with flask end points
+  - contains scripts to set up traditional JMeter cluster and control it via REST calls with flask end-points
 
 
 
-## Prerequisits
+## Prerequisites
 
 Kubernetes > 1.8
 
 
-This solution was tested on k8 1.15.1 (Azure) and 1.17 (private cluster)
+Kubernetes architectures were tested on k8 1.15.1 (Azure) and 1.17 (private cluster)
 
 ##
 
-### For private deployments
+### For private deployments run
 
 k8 1.16 and below
 ```bash
