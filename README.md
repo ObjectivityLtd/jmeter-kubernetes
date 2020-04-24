@@ -68,3 +68,4 @@ cd ~ && source .bash_profile && rm -Rf jmeter-kubernetes && git clone https://gi
 - Visit this project Wiki for detailed description of each pipeline and use-case.
 - Visit: https://medium.com/@gabriel.starczewski/jmeter-and-azure-pipelines-55f0594239ac to understand how to run Jmeter tests on Azure without Kubernetes cluster.
 
+Credit:The kubernetes base solution is based on kubernautes team repo and articles.
